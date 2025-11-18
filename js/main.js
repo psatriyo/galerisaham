@@ -1,5 +1,99 @@
 // GaleriSaham - Optimized JavaScript
 (function(){'use strict';
+
+// Language Switcher Functionality
+const LanguageSwitcher = {
+  currentLang: 'id',
+
+  init: function() {
+    // Get saved language preference or default to Indonesian
+    this.currentLang = localStorage.getItem('galerisaham-lang') || 'id';
+    this.applyLanguage(this.currentLang);
+    this.updateButtons();
+    this.bindEvents();
+  },
+
+  bindEvents: function() {
+    // Bind click events to language buttons
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const lang = e.target.dataset.lang;
+        if (lang && lang !== this.currentLang) {
+          this.setLanguage(lang);
+        }
+      });
+    });
+  },
+
+  setLanguage: function(lang) {
+    this.currentLang = lang;
+    localStorage.setItem('galerisaham-lang', lang);
+    this.applyLanguage(lang);
+    this.updateButtons();
+  },
+
+  updateButtons: function() {
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      if (btn.dataset.lang === this.currentLang) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+  },
+
+  applyLanguage: function(lang) {
+    // Update HTML lang attribute
+    document.documentElement.lang = lang;
+
+    // Find all elements with data-i18n attribute
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+      const key = element.dataset.i18n;
+      const translation = this.getTranslation(key, lang);
+      if (translation) {
+        element.textContent = translation;
+      }
+    });
+
+    // Handle placeholders for inputs
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+      const key = element.dataset.i18nPlaceholder;
+      const translation = this.getTranslation(key, lang);
+      if (translation) {
+        element.placeholder = translation;
+      }
+    });
+  },
+
+  getTranslation: function(key, lang) {
+    // Navigate through the translations object using dot notation
+    // e.g., "home.heroTagline" -> translations.home.heroTagline
+    if (typeof translations === 'undefined') return null;
+
+    const keys = key.split('.');
+    let value = translations;
+
+    for (const k of keys) {
+      if (value && value[k]) {
+        value = value[k];
+      } else {
+        return null;
+      }
+    }
+
+    return value[lang] || value['id'] || null;
+  }
+};
+
+// Initialize language switcher when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => LanguageSwitcher.init());
+} else {
+  LanguageSwitcher.init();
+}
+
+// Make it globally accessible for debugging
+window.LanguageSwitcher = LanguageSwitcher;
 // Mobile menu toggle
 const menuToggle=document.querySelector('.menu-toggle');
 const navLinks=document.querySelector('.nav-links');
