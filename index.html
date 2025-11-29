@@ -2,37 +2,38 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description" content="GaleriSaham - We Build Profitable Traders. Platform edukasi trading dan analisa saham independen untuk pasar saham Indonesia sejak 2009.">
-    <meta name="keywords" content="trading saham, edukasi trading, analisa saham, pasar saham Indonesia, IDX, belajar trading">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GaleriSaham - Transform your trading journey with professional guidance. Independent stock analysis and education platform for Indonesian market since 2009.">
+    <meta name="keywords" content="stock trading, trading education, stock analysis, Indonesian stock market, IDX, learn trading, profitable trader">
     <meta name="author" content="GaleriSaham">
-    <meta name="theme-color" content="#1a5490">
+    <meta name="theme-color" content="#1a365d">
 
-    <!-- Performance & SEO -->
+    <!-- Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Critical CSS -->
+    <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="GaleriSaham - We Build Profitable Traders">
-    <meta property="og:description" content="Platform edukasi trading dan analisa saham independen untuk pasar saham Indonesia">
+    <meta property="og:title" content="GaleriSaham - Master the Market, Build Your Wealth">
+    <meta property="og:description" content="Transform your trading journey with professional guidance. Join 10,000+ successful traders.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://galerisaham.com">
 
-    <title>GaleriSaham - We Build Profitable Traders</title>
+    <title>GaleriSaham - Master the Market, Build Your Wealth</title>
 </head>
 <body>
     <!-- Header -->
     <header>
         <nav class="container">
-            <div class="logo">Galeri<span>Saham</span></div>
+            <a href="#" class="logo">Galeri<span>Saham</span></a>
             <ul class="nav-links">
                 <li><a href="#home" data-i18n="nav.home">Beranda</a></li>
-                <li><a href="#services" data-i18n="nav.services">Layanan</a></li>
-                <li><a href="#about" data-i18n="nav.about">Tentang</a></li>
+                <li><a href="#features" data-i18n="nav.services">Layanan</a></li>
                 <li><a href="#programs" data-i18n="nav.programs">Program</a></li>
+                <li><a href="#why-us" data-i18n="nav.about">Tentang</a></li>
                 <li><a href="pages/contact.html" data-i18n="nav.contact">Kontak</a></li>
             </ul>
             <div class="nav-right">
@@ -51,150 +52,410 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-grid"></div>
         <div class="container">
-            <h1>We Build Profitable Traders</h1>
-            <p data-i18n="home.heroTagline">Platform edukasi trading dan analisa saham independen untuk pasar saham Indonesia sejak 2009</p>
-            <div class="hero-buttons">
-                <a href="#services" class="btn btn-primary" data-i18n="home.heroBtn1">Mulai Belajar</a>
-                <a href="#about" class="btn btn-secondary" data-i18n="home.heroBtn2">Tentang Kami</a>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge fade-in">
+                        <svg class="hero-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                        <span data-i18n="home.heroBadge">Dipercaya 10.000+ Trader Indonesia</span>
+                    </div>
+                    <h1 class="fade-in fade-in-delay-1">
+                        <span data-i18n="home.heroTitle1">Kuasai Pasar,</span><br>
+                        <span class="gradient-text" data-i18n="home.heroTitle2">Bangun Kekayaanmu</span>
+                    </h1>
+                    <p class="hero-description fade-in fade-in-delay-2" data-i18n="home.heroDescription">
+                        Ubah perjalanan trading Anda dengan bimbingan profesional. Dapatkan analisa independen, strategi teruji, dan komunitas yang mendukung kesuksesan Anda di pasar saham Indonesia.
+                    </p>
+                    <div class="hero-buttons fade-in fade-in-delay-3">
+                        <a href="#programs" class="btn btn-primary btn-lg" data-i18n="home.heroBtn1">
+                            Mulai Sekarang
+                        </a>
+                        <a href="#how-it-works" class="btn btn-secondary btn-lg" data-i18n="home.heroBtn2">
+                            Lihat Cara Kerja
+                        </a>
+                    </div>
+                    <div class="hero-stats fade-in fade-in-delay-4">
+                        <div class="hero-stat">
+                            <div class="hero-stat-value">16+</div>
+                            <p class="hero-stat-label" data-i18n="home.heroStat1">Tahun Pengalaman</p>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-value">10K+</div>
+                            <p class="hero-stat-label" data-i18n="home.heroStat2">Trader Terbantu</p>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-value">100%</div>
+                            <p class="hero-stat-label" data-i18n="home.heroStat3">Independen</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual fade-in">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-chart">
+                            <div class="hero-chart-inner">
+                                <div class="chart-header">
+                                    <span class="chart-title">Portfolio Performance</span>
+                                    <span class="chart-badge">LIVE</span>
+                                </div>
+                                <div class="chart-value">+127.8%</div>
+                                <div class="chart-change">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 15l-6-6-6 6"/>
+                                    </svg>
+                                    <span data-i18n="home.chartGrowth">+24.5% bulan ini</span>
+                                </div>
+                                <div class="chart-graph">
+                                    <div class="chart-line">
+                                        <svg viewBox="0 0 400 120" preserveAspectRatio="none">
+                                            <defs>
+                                                <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                    <stop offset="0%" style="stop-color:#34d399;stop-opacity:0.3"/>
+                                                    <stop offset="100%" style="stop-color:#34d399;stop-opacity:0"/>
+                                                </linearGradient>
+                                            </defs>
+                                            <path class="chart-area-path" d="M0,100 L20,95 L40,85 L60,90 L80,70 L100,75 L120,60 L140,65 L160,50 L180,55 L200,40 L220,45 L240,35 L260,40 L280,25 L300,30 L320,20 L340,25 L360,15 L380,20 L400,10 L400,120 L0,120 Z"/>
+                                            <path class="chart-line-path" d="M0,100 L20,95 L40,85 L60,90 L80,70 L100,75 L120,60 L140,65 L160,50 L180,55 L200,40 L220,45 L240,35 L260,40 L280,25 L300,30 L320,20 L340,25 L360,15 L380,20 L400,10"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Floating Cards -->
+                        <div class="floating-card floating-card-1">
+                            <div class="floating-icon green">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <path d="M22 4L12 14.01l-3-3"/>
+                                </svg>
+                            </div>
+                            <div class="floating-text">
+                                <h4 data-i18n="home.floatingCard1Title">Signal Diterima</h4>
+                                <p data-i18n="home.floatingCard1Desc">BBCA +8.5%</p>
+                            </div>
+                        </div>
+                        <div class="floating-card floating-card-2">
+                            <div class="floating-icon blue">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                </svg>
+                            </div>
+                            <div class="floating-text">
+                                <h4 data-i18n="home.floatingCard2Title">Profit Hari Ini</h4>
+                                <p>+Rp 2.450.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services">
+    <!-- Stats Bar -->
+    <section class="stats-bar">
         <div class="container">
-            <div class="section-header">
-                <h2 data-i18n="home.servicesTitle">Layanan Kami</h2>
-                <p data-i18n="home.servicesSubtitle">Solusi lengkap untuk kesuksesan trading Anda di pasar saham Indonesia</p>
-            </div>
-            <div class="grid grid-3">
-                <div class="card">
-                    <div class="card-icon">📊</div>
-                    <h3 data-i18n="home.service1Title">Analisa Teknikal</h3>
-                    <p data-i18n="home.service1Desc">Analisa mendalam menggunakan indikator teknikal dan chart pattern untuk menentukan timing entry dan exit yang optimal.</p>
+            <div class="stats-bar-grid">
+                <div class="stats-bar-item fade-in">
+                    <div class="stats-bar-value">16+</div>
+                    <p class="stats-bar-label" data-i18n="home.statBar1">Tahun di Pasar</p>
                 </div>
-                <div class="card">
-                    <div class="card-icon">📈</div>
-                    <h3 data-i18n="home.service2Title">Analisa Fundamental</h3>
-                    <p data-i18n="home.service2Desc">Evaluasi komprehensif laporan keuangan dan valuasi perusahaan untuk investasi jangka panjang yang menguntungkan.</p>
+                <div class="stats-bar-item fade-in fade-in-delay-1">
+                    <div class="stats-bar-value">10K+</div>
+                    <p class="stats-bar-label" data-i18n="home.statBar2">Member Aktif</p>
                 </div>
-                <div class="card">
-                    <div class="card-icon">🎯</div>
-                    <h3 data-i18n="home.service3Title">Trading Plan</h3>
-                    <p data-i18n="home.service3Desc">Rencana trading sistematis dengan risk management yang jelas untuk meningkatkan konsistensi profit Anda.</p>
+                <div class="stats-bar-item fade-in fade-in-delay-2">
+                    <div class="stats-bar-value">500+</div>
+                    <p class="stats-bar-label" data-i18n="home.statBar3">Saham Dianalisa</p>
                 </div>
-                <div class="card">
-                    <div class="card-icon">📚</div>
-                    <h3 data-i18n="home.service4Title">Edukasi & Workshop</h3>
-                    <p data-i18n="home.service4Desc">Program pembelajaran komprehensif dari dasar hingga advanced untuk membangun fondasi trading yang kuat.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🤝</div>
-                    <h3 data-i18n="home.service5Title">Konsultasi Personal</h3>
-                    <p data-i18n="home.service5Desc">Bimbingan langsung dari analis berpengalaman untuk strategi trading yang disesuaikan dengan profil Anda.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">💡</div>
-                    <h3 data-i18n="home.service6Title">Market Insight</h3>
-                    <p data-i18n="home.service6Desc">Update reguler kondisi pasar, sentimen, dan rekomendasi saham untuk keputusan trading yang lebih baik.</p>
+                <div class="stats-bar-item fade-in fade-in-delay-3">
+                    <div class="stats-bar-value">24/7</div>
+                    <p class="stats-bar-label" data-i18n="home.statBar4">Dukungan Tim</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="stats">
+    <!-- Features Section -->
+    <section id="features" class="features">
         <div class="container">
             <div class="section-header">
-                <h2 data-i18n="home.aboutTitle">Mengapa GaleriSaham?</h2>
-                <p data-i18n="home.aboutSubtitle">Pengalaman dan dedikasi untuk kesuksesan trading Anda</p>
+                <span class="section-label" data-i18n="home.featuresLabel">Layanan Kami</span>
+                <h2 data-i18n="home.featuresTitle">Semua yang Anda Butuhkan untuk Trading Sukses</h2>
+                <p data-i18n="home.featuresSubtitle">Dari analisa harian hingga mentoring personal, kami menyediakan tools dan edukasi komprehensif untuk perjalanan trading Anda.</p>
             </div>
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <h3>16+</h3>
-                    <p data-i18n="home.stat1Label">Tahun Pengalaman</p>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3v18h18"/>
+                            <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="home.feature1Title">Analisa Teknikal</h3>
+                    <p data-i18n="home.feature1Desc">Analisa chart profesional dengan indikator teknikal canggih untuk timing entry dan exit yang presisi.</p>
                 </div>
-                <div class="stat-item">
-                    <h3>10K+</h3>
-                    <p data-i18n="home.stat2Label">Trader Terbantu</p>
+                <div class="feature-card fade-in fade-in-delay-1">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <path d="M14 2v6h6"/>
+                            <path d="M16 13H8"/>
+                            <path d="M16 17H8"/>
+                            <path d="M10 9H8"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="home.feature2Title">Analisa Fundamental</h3>
+                    <p data-i18n="home.feature2Desc">Evaluasi mendalam laporan keuangan dan valuasi perusahaan untuk keputusan investasi yang solid.</p>
                 </div>
-                <div class="stat-item">
-                    <h3>100%</h3>
-                    <p data-i18n="home.stat3Label">Independen</p>
+                <div class="feature-card fade-in fade-in-delay-2">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="home.feature3Title">Trading Plan</h3>
+                    <p data-i18n="home.feature3Desc">Rencana trading sistematis dengan risk management yang jelas untuk profit yang konsisten.</p>
                 </div>
-                <div class="stat-item">
-                    <h3>24/7</h3>
-                    <p data-i18n="home.stat4Label">Dukungan</p>
+                <div class="feature-card fade-in fade-in-delay-3">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="home.feature4Title">Komunitas Trader</h3>
+                    <p data-i18n="home.feature4Desc">Bergabung dengan komunitas trader aktif untuk sharing, diskusi, dan dukungan trading.</p>
+                </div>
+                <div class="feature-card fade-in fade-in-delay-4">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="home.feature5Title">Edukasi Trading</h3>
+                    <p data-i18n="home.feature5Desc">Program pembelajaran komprehensif dari dasar hingga advanced dengan metode proven.</p>
+                </div>
+                <div class="feature-card fade-in fade-in-delay-5">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="home.feature6Title">Konsultasi Personal</h3>
+                    <p data-i18n="home.feature6Desc">Bimbingan langsung dari analis berpengalaman untuk strategi yang disesuaikan dengan profil Anda.</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div style="margin-top:4rem">
-                <div class="grid grid-2">
-                    <div class="feature">
-                        <div class="feature-icon">🔍</div>
-                        <div class="feature-content">
-                            <h3 data-i18n="home.feature1Title">Independen & Netral</h3>
-                            <p data-i18n="home.feature1Desc">Tidak terafiliasi dengan sekuritas manapun, sehingga analisa kami bebas dari berbagai kepentingan di pasar.</p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">🎓</div>
-                        <div class="feature-content">
-                            <h3 data-i18n="home.feature2Title">Pengalaman Institusional</h3>
-                            <p data-i18n="home.feature2Desc">Tim dengan background sebagai broker institusional dan investment committee di perusahaan asset management.</p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">📱</div>
-                        <div class="feature-content">
-                            <h3 data-i18n="home.feature3Title">Platform Modern</h3>
-                            <p data-i18n="home.feature3Desc">Akses informasi dan analisa kapanpun, dimanapun melalui platform digital yang user-friendly.</p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">🏆</div>
-                        <div class="feature-content">
-                            <h3 data-i18n="home.feature4Title">Track Record Terbukti</h3>
-                            <p data-i18n="home.feature4Desc">Lebih dari 10 tahun membantu trader dan investor mencapai target finansial mereka.</p>
-                        </div>
-                    </div>
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="home.howLabel">Cara Kerja</span>
+                <h2 data-i18n="home.howTitle">Mulai Trading dalam 3 Langkah Mudah</h2>
+                <p data-i18n="home.howSubtitle">Proses sederhana untuk memulai perjalanan menjadi trader profitable.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card fade-in">
+                    <div class="step-number">1</div>
+                    <h3 data-i18n="home.step1Title">Pilih Program</h3>
+                    <p data-i18n="home.step1Desc">Pilih program yang sesuai dengan kebutuhan dan level trading Anda, dari pemula hingga profesional.</p>
+                </div>
+                <div class="step-card fade-in fade-in-delay-1">
+                    <div class="step-number">2</div>
+                    <h3 data-i18n="home.step2Title">Belajar & Praktik</h3>
+                    <p data-i18n="home.step2Desc">Ikuti materi edukasi dan analisa harian. Praktikkan strategi dengan bimbingan dari tim kami.</p>
+                </div>
+                <div class="step-card fade-in fade-in-delay-2">
+                    <div class="step-number">3</div>
+                    <h3 data-i18n="home.step3Title">Raih Profit</h3>
+                    <p data-i18n="home.step3Desc">Terapkan sistem trading yang teruji dan raih profit secara konsisten di pasar saham Indonesia.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Programs Section -->
-    <section id="programs">
+    <section id="programs" class="programs">
         <div class="container">
             <div class="section-header">
-                <h2 data-i18n="home.programsTitle">Program Unggulan</h2>
-                <p data-i18n="home.programsSubtitle">Pilih program yang sesuai dengan kebutuhan trading Anda</p>
+                <span class="section-label" data-i18n="home.programsLabel">Program Kami</span>
+                <h2 data-i18n="home.programsTitle">Pilih Jalur Menuju Kesuksesan Trading</h2>
+                <p data-i18n="home.programsSubtitle">Program yang dirancang untuk setiap level trader, dari pemula hingga profesional.</p>
             </div>
-            <div class="grid grid-2">
-                <div class="card">
-                    <h3>🎯 <span data-i18n="home.program1Title">STM - Systematic Trading Management</span></h3>
-                    <p data-i18n="home.program1Desc">Program trading sistematis untuk mencapai MEGA profit dengan pendekatan terstruktur dan risk management yang ketat. Cocok untuk trader yang ingin konsistensi jangka panjang.</p>
-                    <br>
-                    <a href="pages/stm.html" class="btn btn-primary" data-i18n="home.program1Btn">Pelajari STM</a>
+            <div class="programs-grid">
+                <div class="program-card fade-in">
+                    <div class="program-icon blue">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 16v-4"/>
+                            <path d="M12 8h.01"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="home.program1Title">STM - Systematic Trading</h3>
+                    <p data-i18n="home.program1Desc">Program trading sistematis dengan pendekatan terstruktur untuk profit konsisten jangka panjang.</p>
+                    <ul class="program-features">
+                        <li data-i18n="home.program1Feature1">Daily trading signal</li>
+                        <li data-i18n="home.program1Feature2">Risk management ketat</li>
+                        <li data-i18n="home.program1Feature3">Live trading session</li>
+                    </ul>
+                    <a href="pages/stm.html" class="program-link" data-i18n="home.program1Btn">
+                        Pelajari Lebih Lanjut
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
                 </div>
-                <div class="card">
-                    <h3>💼 <span data-i18n="home.program2Title">GaleriSaham Pro</span></h3>
-                    <p data-i18n="home.program2Desc">Membership premium dengan akses penuh ke semua analisa, trading plan, dan tools eksklusif. Dapatkan bimbingan intensif dari tim analis profesional kami.</p>
-                    <br>
-                    <a href="pages/pro.html" class="btn btn-primary" data-i18n="home.program2Btn">Gabung Pro</a>
+                <div class="program-card fade-in fade-in-delay-1">
+                    <div class="program-icon green">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="home.program2Title">GaleriSaham Pro</h3>
+                    <p data-i18n="home.program2Desc">Membership premium dengan akses penuh ke semua analisa, tools eksklusif, dan bimbingan intensif.</p>
+                    <ul class="program-features">
+                        <li data-i18n="home.program2Feature1">Full access analisa</li>
+                        <li data-i18n="home.program2Feature2">Priority support</li>
+                        <li data-i18n="home.program2Feature3">Monthly webinar</li>
+                    </ul>
+                    <a href="pages/pro.html" class="program-link" data-i18n="home.program2Btn">
+                        Pelajari Lebih Lanjut
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
                 </div>
-                <div class="card">
-                    <h3>🎓 <span data-i18n="home.program3Title">Profit Trader Club</span></h3>
-                    <p data-i18n="home.program3Desc">Workshop dan training intensif untuk membangun skill trading dari nol hingga mahir. Belajar langsung dari praktisi berpengalaman dengan metode yang terbukti.</p>
-                    <br>
-                    <a href="pages/workshop.html" class="btn btn-primary" data-i18n="home.program3Btn">Info Workshop</a>
+                <div class="program-card fade-in fade-in-delay-2">
+                    <div class="program-icon amber">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="home.program3Title">Profit Trader Club</h3>
+                    <p data-i18n="home.program3Desc">Workshop dan training intensif untuk membangun skill trading dari nol hingga mahir.</p>
+                    <ul class="program-features">
+                        <li data-i18n="home.program3Feature1">Hands-on workshop</li>
+                        <li data-i18n="home.program3Feature2">Praktik langsung</li>
+                        <li data-i18n="home.program3Feature3">Sertifikat completion</li>
+                    </ul>
+                    <a href="pages/workshop.html" class="program-link" data-i18n="home.program3Btn">
+                        Pelajari Lebih Lanjut
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
                 </div>
-                <div class="card">
-                    <h3>📊 <span data-i18n="home.program4Title">Daily Market Analysis</span></h3>
-                    <p data-i18n="home.program4Desc">Analisa harian kondisi pasar, moving stock, dan rekomendasi saham. Update real-time untuk membantu keputusan trading Anda setiap hari.</p>
-                    <br>
-                    <a href="pages/analysis.html" class="btn btn-primary" data-i18n="home.program4Btn">Lihat Analisa</a>
+                <div class="program-card fade-in fade-in-delay-3">
+                    <div class="program-icon purple">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3v18h18"/>
+                            <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="home.program4Title">Daily Analysis</h3>
+                    <p data-i18n="home.program4Desc">Analisa pasar harian dengan rekomendasi saham, entry point, dan target profit yang jelas.</p>
+                    <ul class="program-features">
+                        <li data-i18n="home.program4Feature1">Morning brief</li>
+                        <li data-i18n="home.program4Feature2">Intraday update</li>
+                        <li data-i18n="home.program4Feature3">Closing summary</li>
+                    </ul>
+                    <a href="pages/analysis.html" class="program-link" data-i18n="home.program4Btn">
+                        Pelajari Lebih Lanjut
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us">
+        <div class="container">
+            <div class="why-us-grid">
+                <div class="why-us-content">
+                    <span class="section-label fade-in" data-i18n="home.whyLabel">Mengapa GaleriSaham</span>
+                    <h2 class="fade-in fade-in-delay-1" data-i18n="home.whyTitle">Dipercaya Ribuan Trader Sejak 2009</h2>
+                    <p class="fade-in fade-in-delay-2" data-i18n="home.whySubtitle">Kami bukan hanya platform analisa. Kami adalah partner Anda menuju kesuksesan trading dengan pendekatan yang proven dan tim berpengalaman.</p>
+                    <div class="why-us-list">
+                        <div class="why-us-item fade-in fade-in-delay-3">
+                            <div class="why-us-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 data-i18n="home.why1Title">100% Independen</h4>
+                                <p data-i18n="home.why1Desc">Tidak terafiliasi dengan sekuritas manapun, analisa bebas kepentingan.</p>
+                            </div>
+                        </div>
+                        <div class="why-us-item fade-in fade-in-delay-4">
+                            <div class="why-us-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 data-i18n="home.why2Title">Background Institusional</h4>
+                                <p data-i18n="home.why2Desc">Tim dengan pengalaman sebagai broker dan investment committee.</p>
+                            </div>
+                        </div>
+                        <div class="why-us-item fade-in fade-in-delay-5">
+                            <div class="why-us-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <path d="M22 4L12 14.01l-3-3"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 data-i18n="home.why3Title">Track Record Terbukti</h4>
+                                <p data-i18n="home.why3Desc">Lebih dari 16 tahun membantu trader mencapai target finansial.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-us-visual fade-in">
+                    <div class="why-us-image">
+                        <div class="trust-card">
+                            <div class="trust-header">
+                                <div class="trust-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </div>
+                                <h4 data-i18n="home.trustCardTitle">Member Satisfaction</h4>
+                            </div>
+                            <div class="trust-stats">
+                                <div class="trust-stat">
+                                    <div class="trust-stat-value">4.9/5</div>
+                                    <p class="trust-stat-label" data-i18n="home.trustStat1">Rating</p>
+                                </div>
+                                <div class="trust-stat">
+                                    <div class="trust-stat-value">98%</div>
+                                    <p class="trust-stat-label" data-i18n="home.trustStat2">Puas</p>
+                                </div>
+                                <div class="trust-stat">
+                                    <div class="trust-stat-value">85%</div>
+                                    <p class="trust-stat-label" data-i18n="home.trustStat3">Perpanjang</p>
+                                </div>
+                                <div class="trust-stat">
+                                    <div class="trust-stat-value">10K+</div>
+                                    <p class="trust-stat-label" data-i18n="home.trustStat4">Member</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -203,32 +464,56 @@
     <!-- CTA Section -->
     <section class="cta">
         <div class="container">
-            <h2 data-i18n="home.ctaTitle">Siap Menjadi Profitable Trader?</h2>
-            <p data-i18n="home.ctaText">Bergabunglah dengan ribuan trader sukses yang telah merasakan manfaat dari platform kami</p>
-            <a href="pages/contact.html" class="btn btn-secondary" data-i18n="home.ctaBtn">Hubungi Kami Sekarang</a>
+            <div class="cta-content">
+                <h2 class="fade-in" data-i18n="home.ctaTitle">Siap Memulai Perjalanan Trading Anda?</h2>
+                <p class="fade-in fade-in-delay-1" data-i18n="home.ctaText">Bergabunglah dengan ribuan trader sukses yang telah mempercayakan perjalanan trading mereka kepada GaleriSaham.</p>
+                <div class="cta-buttons fade-in fade-in-delay-2">
+                    <a href="pages/contact.html" class="btn btn-primary btn-lg" data-i18n="home.ctaBtn1">Mulai Sekarang</a>
+                    <a href="#programs" class="btn btn-secondary btn-lg" data-i18n="home.ctaBtn2">Lihat Program</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>GaleriSaham</h3>
-                    <p data-i18n="footer.description">Platform edukasi trading dan analisa saham independen untuk pasar saham Indonesia sejak 2009.</p>
-                    <p style="margin-top:1rem"><strong>We Build Profitable Traders</strong></p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Galeri<span>Saham</span></h3>
+                    <p data-i18n="footer.description">Platform edukasi trading dan analisa saham independen untuk pasar saham Indonesia. Dipercaya sejak 2009.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <path d="M17.5 6.5h.01"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                                <path d="M9.75 15.02l5.75-3.27-5.75-3.27v6.54z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Telegram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 5L2 12.5l7 1M21 5l-2.5 15L9 13.5M21 5L9 13.5m0 0V19l3.249-3.277"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
                 <div class="footer-section">
-                    <h3 data-i18n="footer.servicesTitle">Layanan</h3>
+                    <h4 data-i18n="footer.servicesTitle">Layanan</h4>
                     <ul>
-                        <li><a href="#services" data-i18n="footer.technicalAnalysis">Analisa Teknikal</a></li>
-                        <li><a href="#services" data-i18n="footer.fundamentalAnalysis">Analisa Fundamental</a></li>
-                        <li><a href="#services" data-i18n="footer.tradingPlan">Trading Plan</a></li>
-                        <li><a href="#services" data-i18n="footer.educationWorkshop">Edukasi & Workshop</a></li>
+                        <li><a href="#features" data-i18n="footer.technicalAnalysis">Analisa Teknikal</a></li>
+                        <li><a href="#features" data-i18n="footer.fundamentalAnalysis">Analisa Fundamental</a></li>
+                        <li><a href="#features" data-i18n="footer.tradingPlan">Trading Plan</a></li>
+                        <li><a href="#features" data-i18n="footer.educationWorkshop">Edukasi Trading</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3 data-i18n="footer.programTitle">Program</h3>
+                    <h4 data-i18n="footer.programTitle">Program</h4>
                     <ul>
                         <li><a href="pages/stm.html" data-i18n="footer.stmProgram">STM Program</a></li>
                         <li><a href="pages/pro.html" data-i18n="footer.proMembership">GaleriSaham Pro</a></li>
@@ -237,22 +522,25 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3 data-i18n="footer.contactTitle">Kontak</h3>
+                    <h4 data-i18n="footer.contactTitle">Kontak</h4>
                     <ul>
-                        <li>📍 Jakarta, Indonesia</li>
-                        <li>📧 info@galerisaham.com</li>
-                        <li>📱 <span data-i18n="footer.socialMedia">Social Media</span></li>
+                        <li>Jakarta, Indonesia</li>
+                        <li>info@galerisaham.com</li>
                         <li><a href="pages/contact.html" data-i18n="footer.contactUs">Hubungi Kami</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2009-2025 GaleriSaham.com - Independent Stock Market Consultant Indonesia. All rights reserved.</p>
+                <p>&copy; 2009-2025 GaleriSaham.com - Independent Stock Market Consultant Indonesia</p>
+                <div class="footer-bottom-links">
+                    <a href="#" data-i18n="footer.privacy">Kebijakan Privasi</a>
+                    <a href="#" data-i18n="footer.terms">Syarat & Ketentuan</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Optimized JS - Deferred -->
+    <!-- Scripts -->
     <script src="js/translations.js" defer></script>
     <script src="js/main.js" defer></script>
 </body>
