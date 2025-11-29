@@ -9,155 +9,222 @@ const translations = {
     contact: { id: 'Kontak', en: 'Contact' }
   },
 
-  // Homepage
+  // Homepage - New Redesigned Content
   home: {
     // Hero Section
-    heroTagline: {
-      id: 'Platform edukasi trading dan analisa saham independen untuk pasar saham Indonesia sejak 2009',
-      en: 'Independent stock trading education and analysis platform for the Indonesian stock market since 2009'
+    heroBadge: {
+      id: 'Dipercaya 10.000+ Trader Indonesia',
+      en: 'Trusted by 10,000+ Indonesian Traders'
     },
-    heroBtn1: { id: 'Mulai Belajar', en: 'Start Learning' },
-    heroBtn2: { id: 'Tentang Kami', en: 'About Us' },
+    heroTitle1: {
+      id: 'Kuasai Pasar,',
+      en: 'Master the Market,'
+    },
+    heroTitle2: {
+      id: 'Bangun Kekayaanmu',
+      en: 'Build Your Wealth'
+    },
+    heroDescription: {
+      id: 'Ubah perjalanan trading Anda dengan bimbingan profesional. Dapatkan analisa independen, strategi teruji, dan komunitas yang mendukung kesuksesan Anda di pasar saham Indonesia.',
+      en: 'Transform your trading journey with professional guidance. Get independent analysis, proven strategies, and a supportive community for your success in the Indonesian stock market.'
+    },
+    heroBtn1: { id: 'Mulai Sekarang', en: 'Get Started' },
+    heroBtn2: { id: 'Lihat Cara Kerja', en: 'See How It Works' },
+    heroStat1: { id: 'Tahun Pengalaman', en: 'Years Experience' },
+    heroStat2: { id: 'Trader Terbantu', en: 'Traders Helped' },
+    heroStat3: { id: 'Independen', en: 'Independent' },
+    chartGrowth: { id: '+24.5% bulan ini', en: '+24.5% this month' },
+    floatingCard1Title: { id: 'Signal Diterima', en: 'Signal Received' },
+    floatingCard1Desc: { id: 'BBCA +8.5%', en: 'BBCA +8.5%' },
+    floatingCard2Title: { id: 'Profit Hari Ini', en: 'Today\'s Profit' },
 
-    // Services Section
-    servicesTitle: { id: 'Layanan Kami', en: 'Our Services' },
-    servicesSubtitle: {
-      id: 'Solusi lengkap untuk kesuksesan trading Anda di pasar saham Indonesia',
-      en: 'Complete solutions for your trading success in the Indonesian stock market'
-    },
+    // Stats Bar
+    statBar1: { id: 'Tahun di Pasar', en: 'Years in Market' },
+    statBar2: { id: 'Member Aktif', en: 'Active Members' },
+    statBar3: { id: 'Saham Dianalisa', en: 'Stocks Analyzed' },
+    statBar4: { id: 'Dukungan Tim', en: 'Team Support' },
 
-    // Service Cards
-    service1Title: { id: 'Analisa Teknikal', en: 'Technical Analysis' },
-    service1Desc: {
-      id: 'Analisa mendalam menggunakan indikator teknikal dan chart pattern untuk menentukan timing entry dan exit yang optimal.',
-      en: 'In-depth analysis using technical indicators and chart patterns to determine optimal entry and exit timing.'
+    // Features Section
+    featuresLabel: { id: 'Layanan Kami', en: 'Our Services' },
+    featuresTitle: {
+      id: 'Semua yang Anda Butuhkan untuk Trading Sukses',
+      en: 'Everything You Need for Successful Trading'
     },
-    service2Title: { id: 'Analisa Fundamental', en: 'Fundamental Analysis' },
-    service2Desc: {
-      id: 'Evaluasi komprehensif laporan keuangan dan valuasi perusahaan untuk investasi jangka panjang yang menguntungkan.',
-      en: 'Comprehensive evaluation of financial reports and company valuations for profitable long-term investments.'
+    featuresSubtitle: {
+      id: 'Dari analisa harian hingga mentoring personal, kami menyediakan tools dan edukasi komprehensif untuk perjalanan trading Anda.',
+      en: 'From daily analysis to personal mentoring, we provide comprehensive tools and education for your trading journey.'
     },
-    service3Title: { id: 'Trading Plan', en: 'Trading Plan' },
-    service3Desc: {
-      id: 'Rencana trading sistematis dengan risk management yang jelas untuk meningkatkan konsistensi profit Anda.',
-      en: 'Systematic trading plans with clear risk management to improve your profit consistency.'
-    },
-    service4Title: { id: 'Edukasi & Workshop', en: 'Education & Workshop' },
-    service4Desc: {
-      id: 'Program pembelajaran komprehensif dari dasar hingga advanced untuk membangun fondasi trading yang kuat.',
-      en: 'Comprehensive learning programs from basic to advanced to build a strong trading foundation.'
-    },
-    service5Title: { id: 'Konsultasi Personal', en: 'Personal Consultation' },
-    service5Desc: {
-      id: 'Bimbingan langsung dari analis berpengalaman untuk strategi trading yang disesuaikan dengan profil Anda.',
-      en: 'Direct guidance from experienced analysts for trading strategies tailored to your profile.'
-    },
-    service6Title: { id: 'Market Insight', en: 'Market Insight' },
-    service6Desc: {
-      id: 'Update reguler kondisi pasar, sentimen, dan rekomendasi saham untuk keputusan trading yang lebih baik.',
-      en: 'Regular updates on market conditions, sentiment, and stock recommendations for better trading decisions.'
-    },
-
-    // About Section
-    aboutTitle: { id: 'Mengapa GaleriSaham?', en: 'Why GaleriSaham?' },
-    aboutSubtitle: {
-      id: 'Pengalaman dan dedikasi untuk kesuksesan trading Anda',
-      en: 'Experience and dedication for your trading success'
-    },
-
-    // Stats
-    stat1Label: { id: 'Tahun Pengalaman', en: 'Years of Experience' },
-    stat2Label: { id: 'Trader Terbantu', en: 'Traders Helped' },
-    stat3Label: { id: 'Independen', en: 'Independent' },
-    stat4Label: { id: 'Dukungan', en: 'Support' },
-
-    // Features
-    feature1Title: { id: 'Independen & Netral', en: 'Independent & Neutral' },
+    feature1Title: { id: 'Analisa Teknikal', en: 'Technical Analysis' },
     feature1Desc: {
-      id: 'Tidak terafiliasi dengan sekuritas manapun, sehingga analisa kami bebas dari berbagai kepentingan di pasar.',
-      en: 'Not affiliated with any securities firm, so our analysis is free from various market interests.'
+      id: 'Analisa chart profesional dengan indikator teknikal canggih untuk timing entry dan exit yang presisi.',
+      en: 'Professional chart analysis with advanced technical indicators for precise entry and exit timing.'
     },
-    feature2Title: { id: 'Pengalaman Institusional', en: 'Institutional Experience' },
+    feature2Title: { id: 'Analisa Fundamental', en: 'Fundamental Analysis' },
     feature2Desc: {
-      id: 'Tim dengan background sebagai broker institusional dan investment committee di perusahaan asset management.',
-      en: 'Team with background as institutional brokers and investment committee in asset management companies.'
+      id: 'Evaluasi mendalam laporan keuangan dan valuasi perusahaan untuk keputusan investasi yang solid.',
+      en: 'In-depth evaluation of financial reports and company valuations for solid investment decisions.'
     },
-    feature3Title: { id: 'Platform Modern', en: 'Modern Platform' },
+    feature3Title: { id: 'Trading Plan', en: 'Trading Plan' },
     feature3Desc: {
-      id: 'Akses informasi dan analisa kapanpun, dimanapun melalui platform digital yang user-friendly.',
-      en: 'Access information and analysis anytime, anywhere through a user-friendly digital platform.'
+      id: 'Rencana trading sistematis dengan risk management yang jelas untuk profit yang konsisten.',
+      en: 'Systematic trading plans with clear risk management for consistent profits.'
     },
-    feature4Title: { id: 'Track Record Terbukti', en: 'Proven Track Record' },
+    feature4Title: { id: 'Komunitas Trader', en: 'Trader Community' },
     feature4Desc: {
-      id: 'Lebih dari 10 tahun membantu trader dan investor mencapai target finansial mereka.',
-      en: 'Over 10 years helping traders and investors achieve their financial targets.'
+      id: 'Bergabung dengan komunitas trader aktif untuk sharing, diskusi, dan dukungan trading.',
+      en: 'Join an active trader community for sharing, discussion, and trading support.'
+    },
+    feature5Title: { id: 'Edukasi Trading', en: 'Trading Education' },
+    feature5Desc: {
+      id: 'Program pembelajaran komprehensif dari dasar hingga advanced dengan metode proven.',
+      en: 'Comprehensive learning programs from basic to advanced with proven methods.'
+    },
+    feature6Title: { id: 'Konsultasi Personal', en: 'Personal Consultation' },
+    feature6Desc: {
+      id: 'Bimbingan langsung dari analis berpengalaman untuk strategi yang disesuaikan dengan profil Anda.',
+      en: 'Direct guidance from experienced analysts for strategies tailored to your profile.'
+    },
+
+    // How It Works
+    howLabel: { id: 'Cara Kerja', en: 'How It Works' },
+    howTitle: {
+      id: 'Mulai Trading dalam 3 Langkah Mudah',
+      en: 'Start Trading in 3 Easy Steps'
+    },
+    howSubtitle: {
+      id: 'Proses sederhana untuk memulai perjalanan menjadi trader profitable.',
+      en: 'A simple process to start your journey to becoming a profitable trader.'
+    },
+    step1Title: { id: 'Pilih Program', en: 'Choose a Program' },
+    step1Desc: {
+      id: 'Pilih program yang sesuai dengan kebutuhan dan level trading Anda, dari pemula hingga profesional.',
+      en: 'Choose a program that fits your needs and trading level, from beginner to professional.'
+    },
+    step2Title: { id: 'Belajar & Praktik', en: 'Learn & Practice' },
+    step2Desc: {
+      id: 'Ikuti materi edukasi dan analisa harian. Praktikkan strategi dengan bimbingan dari tim kami.',
+      en: 'Follow educational materials and daily analysis. Practice strategies with guidance from our team.'
+    },
+    step3Title: { id: 'Raih Profit', en: 'Achieve Profits' },
+    step3Desc: {
+      id: 'Terapkan sistem trading yang teruji dan raih profit secara konsisten di pasar saham Indonesia.',
+      en: 'Apply proven trading systems and achieve consistent profits in the Indonesian stock market.'
     },
 
     // Programs Section
-    programsTitle: { id: 'Program Unggulan', en: 'Featured Programs' },
+    programsLabel: { id: 'Program Kami', en: 'Our Programs' },
+    programsTitle: {
+      id: 'Pilih Jalur Menuju Kesuksesan Trading',
+      en: 'Choose Your Path to Trading Success'
+    },
     programsSubtitle: {
-      id: 'Pilih program yang sesuai dengan kebutuhan trading Anda',
-      en: 'Choose a program that suits your trading needs'
+      id: 'Program yang dirancang untuk setiap level trader, dari pemula hingga profesional.',
+      en: 'Programs designed for every trader level, from beginner to professional.'
     },
-
-    // Program Cards
-    program1Title: { id: 'STM - Systematic Trading Management', en: 'STM - Systematic Trading Management' },
+    program1Title: { id: 'STM - Systematic Trading', en: 'STM - Systematic Trading' },
     program1Desc: {
-      id: 'Program trading sistematis untuk mencapai MEGA profit dengan pendekatan terstruktur dan risk management yang ketat. Cocok untuk trader yang ingin konsistensi jangka panjang.',
-      en: 'Systematic trading program to achieve MEGA profit with structured approach and strict risk management. Suitable for traders who want long-term consistency.'
+      id: 'Program trading sistematis dengan pendekatan terstruktur untuk profit konsisten jangka panjang.',
+      en: 'Systematic trading program with a structured approach for long-term consistent profits.'
     },
-    program1Btn: { id: 'Pelajari STM', en: 'Learn STM' },
+    program1Feature1: { id: 'Daily trading signal', en: 'Daily trading signals' },
+    program1Feature2: { id: 'Risk management ketat', en: 'Strict risk management' },
+    program1Feature3: { id: 'Live trading session', en: 'Live trading sessions' },
+    program1Btn: { id: 'Pelajari Lebih Lanjut', en: 'Learn More' },
 
     program2Title: { id: 'GaleriSaham Pro', en: 'GaleriSaham Pro' },
     program2Desc: {
-      id: 'Membership premium dengan akses penuh ke semua analisa, trading plan, dan tools eksklusif. Dapatkan bimbingan intensif dari tim analis profesional kami.',
-      en: 'Premium membership with full access to all analysis, trading plans, and exclusive tools. Get intensive guidance from our professional analyst team.'
+      id: 'Membership premium dengan akses penuh ke semua analisa, tools eksklusif, dan bimbingan intensif.',
+      en: 'Premium membership with full access to all analysis, exclusive tools, and intensive guidance.'
     },
-    program2Btn: { id: 'Gabung Pro', en: 'Join Pro' },
+    program2Feature1: { id: 'Full access analisa', en: 'Full analysis access' },
+    program2Feature2: { id: 'Priority support', en: 'Priority support' },
+    program2Feature3: { id: 'Monthly webinar', en: 'Monthly webinars' },
+    program2Btn: { id: 'Pelajari Lebih Lanjut', en: 'Learn More' },
 
     program3Title: { id: 'Profit Trader Club', en: 'Profit Trader Club' },
     program3Desc: {
-      id: 'Workshop dan training intensif untuk membangun skill trading dari nol hingga mahir. Belajar langsung dari praktisi berpengalaman dengan metode yang terbukti.',
-      en: 'Intensive workshops and training to build trading skills from zero to expert. Learn directly from experienced practitioners with proven methods.'
+      id: 'Workshop dan training intensif untuk membangun skill trading dari nol hingga mahir.',
+      en: 'Intensive workshops and training to build trading skills from zero to expert.'
     },
-    program3Btn: { id: 'Info Workshop', en: 'Workshop Info' },
+    program3Feature1: { id: 'Hands-on workshop', en: 'Hands-on workshops' },
+    program3Feature2: { id: 'Praktik langsung', en: 'Direct practice' },
+    program3Feature3: { id: 'Sertifikat completion', en: 'Completion certificate' },
+    program3Btn: { id: 'Pelajari Lebih Lanjut', en: 'Learn More' },
 
-    program4Title: { id: 'Daily Market Analysis', en: 'Daily Market Analysis' },
+    program4Title: { id: 'Daily Analysis', en: 'Daily Analysis' },
     program4Desc: {
-      id: 'Analisa harian kondisi pasar, moving stock, dan rekomendasi saham. Update real-time untuk membantu keputusan trading Anda setiap hari.',
-      en: 'Daily analysis of market conditions, moving stocks, and stock recommendations. Real-time updates to help your trading decisions every day.'
+      id: 'Analisa pasar harian dengan rekomendasi saham, entry point, dan target profit yang jelas.',
+      en: 'Daily market analysis with stock recommendations, clear entry points, and profit targets.'
     },
-    program4Btn: { id: 'Lihat Analisa', en: 'View Analysis' },
+    program4Feature1: { id: 'Morning brief', en: 'Morning brief' },
+    program4Feature2: { id: 'Intraday update', en: 'Intraday updates' },
+    program4Feature3: { id: 'Closing summary', en: 'Closing summary' },
+    program4Btn: { id: 'Pelajari Lebih Lanjut', en: 'Learn More' },
+
+    // Why Us Section
+    whyLabel: { id: 'Mengapa GaleriSaham', en: 'Why GaleriSaham' },
+    whyTitle: {
+      id: 'Dipercaya Ribuan Trader Sejak 2009',
+      en: 'Trusted by Thousands of Traders Since 2009'
+    },
+    whySubtitle: {
+      id: 'Kami bukan hanya platform analisa. Kami adalah partner Anda menuju kesuksesan trading dengan pendekatan yang proven dan tim berpengalaman.',
+      en: 'We\'re not just an analysis platform. We\'re your partner to trading success with a proven approach and an experienced team.'
+    },
+    why1Title: { id: '100% Independen', en: '100% Independent' },
+    why1Desc: {
+      id: 'Tidak terafiliasi dengan sekuritas manapun, analisa bebas kepentingan.',
+      en: 'Not affiliated with any securities firm, unbiased analysis.'
+    },
+    why2Title: { id: 'Background Institusional', en: 'Institutional Background' },
+    why2Desc: {
+      id: 'Tim dengan pengalaman sebagai broker dan investment committee.',
+      en: 'Team with experience as brokers and investment committee members.'
+    },
+    why3Title: { id: 'Track Record Terbukti', en: 'Proven Track Record' },
+    why3Desc: {
+      id: 'Lebih dari 16 tahun membantu trader mencapai target finansial.',
+      en: 'Over 16 years helping traders achieve their financial targets.'
+    },
+    trustCardTitle: { id: 'Member Satisfaction', en: 'Member Satisfaction' },
+    trustStat1: { id: 'Rating', en: 'Rating' },
+    trustStat2: { id: 'Puas', en: 'Satisfied' },
+    trustStat3: { id: 'Perpanjang', en: 'Renew' },
+    trustStat4: { id: 'Member', en: 'Members' },
 
     // CTA Section
-    ctaTitle: { id: 'Siap Menjadi Profitable Trader?', en: 'Ready to Become a Profitable Trader?' },
-    ctaText: {
-      id: 'Bergabunglah dengan ribuan trader sukses yang telah merasakan manfaat dari platform kami',
-      en: 'Join thousands of successful traders who have experienced the benefits of our platform'
+    ctaTitle: {
+      id: 'Siap Memulai Perjalanan Trading Anda?',
+      en: 'Ready to Start Your Trading Journey?'
     },
-    ctaBtn: { id: 'Hubungi Kami Sekarang', en: 'Contact Us Now' }
+    ctaText: {
+      id: 'Bergabunglah dengan ribuan trader sukses yang telah mempercayakan perjalanan trading mereka kepada GaleriSaham.',
+      en: 'Join thousands of successful traders who have entrusted their trading journey to GaleriSaham.'
+    },
+    ctaBtn1: { id: 'Mulai Sekarang', en: 'Get Started' },
+    ctaBtn2: { id: 'Lihat Program', en: 'View Programs' }
   },
 
   // Footer
   footer: {
     description: {
-      id: 'Platform edukasi trading dan analisa saham independen untuk pasar saham Indonesia sejak 2009.',
-      en: 'Independent stock trading education and analysis platform for the Indonesian stock market since 2009.'
+      id: 'Platform edukasi trading dan analisa saham independen untuk pasar saham Indonesia. Dipercaya sejak 2009.',
+      en: 'Independent stock trading education and analysis platform for the Indonesian stock market. Trusted since 2009.'
     },
     servicesTitle: { id: 'Layanan', en: 'Services' },
     programTitle: { id: 'Program', en: 'Programs' },
     contactTitle: { id: 'Kontak', en: 'Contact' },
-    quickLinksTitle: { id: 'Quick Links', en: 'Quick Links' },
     technicalAnalysis: { id: 'Analisa Teknikal', en: 'Technical Analysis' },
     fundamentalAnalysis: { id: 'Analisa Fundamental', en: 'Fundamental Analysis' },
     tradingPlan: { id: 'Trading Plan', en: 'Trading Plan' },
-    educationWorkshop: { id: 'Edukasi & Workshop', en: 'Education & Workshop' },
+    educationWorkshop: { id: 'Edukasi Trading', en: 'Trading Education' },
     stmProgram: { id: 'STM Program', en: 'STM Program' },
     proMembership: { id: 'GaleriSaham Pro', en: 'GaleriSaham Pro' },
     workshop: { id: 'Profit Trader Club', en: 'Profit Trader Club' },
     dailyAnalysis: { id: 'Daily Analysis', en: 'Daily Analysis' },
     contactUs: { id: 'Hubungi Kami', en: 'Contact Us' },
-    socialMedia: { id: 'Social Media', en: 'Social Media' }
+    privacy: { id: 'Kebijakan Privasi', en: 'Privacy Policy' },
+    terms: { id: 'Syarat & Ketentuan', en: 'Terms & Conditions' }
   },
 
   // Workshop Page
@@ -179,7 +246,6 @@ const translations = {
       en: 'Profit Trader Club is an intensive workshop and training program designed to take you from beginner to profitable trader. With practical and directly applicable learning methods, you will learn proper trading from the start.'
     },
 
-    // Workshop Programs
     workshop1Title: { id: 'Basic Trading Workshop', en: 'Basic Trading Workshop' },
     workshop1Level: { id: 'Untuk Pemula', en: 'For Beginners' },
     workshop1Feature1: { id: 'Pengenalan pasar saham Indonesia', en: 'Introduction to Indonesian stock market' },
@@ -216,7 +282,6 @@ const translations = {
     workshop4Feature5: { id: 'Ongoing support', en: 'Ongoing support' },
     workshop4Duration: { id: 'Flexible', en: 'Flexible' },
 
-    // Differentiators
     diffTitle: { id: 'Apa yang Membedakan Workshop Kami?', en: 'What Makes Our Workshop Different?' },
     diff1Title: { id: 'Praktisi Berpengalaman', en: 'Experienced Practitioners' },
     diff1Desc: { id: 'Diajar langsung oleh trader profesional dengan pengalaman puluhan tahun', en: 'Taught directly by professional traders with decades of experience' },
@@ -231,7 +296,6 @@ const translations = {
     diff6Title: { id: 'Post-Workshop Support', en: 'Post-Workshop Support' },
     diff6Desc: { id: 'Dukungan berkelanjutan bahkan setelah workshop selesai', en: 'Continuous support even after the workshop ends' },
 
-    // CTA
     ctaTitle: { id: 'Investasi Terbaik adalah pada Diri Sendiri', en: 'The Best Investment is in Yourself' },
     ctaText: { id: 'Daftar workshop sekarang dan mulai perjalanan menjadi profitable trader', en: 'Register for a workshop now and start your journey to become a profitable trader' },
     ctaBtn: { id: 'Lihat Jadwal Workshop', en: 'View Workshop Schedule' }
@@ -260,7 +324,6 @@ const translations = {
       en: 'This program is specially designed for traders who want to break free from the cycle of repeated losses and start achieving profit systematically with a measurable approach.'
     },
 
-    // Advantages
     advTitle: { id: 'Keunggulan STM', en: 'STM Advantages' },
     adv1Title: { id: 'Sistem Terukur', en: 'Measurable System' },
     adv1Desc: { id: 'Entry, exit, dan risk management yang jelas dan terukur untuk setiap trade', en: 'Clear and measurable entry, exit, and risk management for every trade' },
@@ -275,7 +338,6 @@ const translations = {
     adv6Title: { id: 'Komunitas Trader', en: 'Trader Community' },
     adv6Desc: { id: 'Bergabung dengan komunitas trader STM yang saling mendukung', en: 'Join the supportive STM trader community' },
 
-    // What You Get
     getTitle: { id: 'Apa yang Anda Dapatkan?', en: 'What Do You Get?' },
     get1Title: { id: 'Daily Trading Signal', en: 'Daily Trading Signal' },
     get1Desc: { id: 'Rekomendasi saham harian dengan entry point, target profit, dan stop loss yang jelas', en: 'Daily stock recommendations with clear entry point, target profit, and stop loss' },
@@ -290,7 +352,6 @@ const translations = {
     get6Title: { id: 'Personal Support', en: 'Personal Support' },
     get6Desc: { id: 'Dukungan langsung dari tim analyst untuk pertanyaan trading Anda', en: 'Direct support from the analyst team for your trading questions' },
 
-    // CTA
     ctaTitle: { id: 'Siap Trading Secara Sistematis?', en: 'Ready to Trade Systematically?' },
     ctaText: { id: 'Bergabunglah dengan program STM dan mulai perjalanan menuju profit konsisten', en: 'Join the STM program and start your journey towards consistent profit' },
     ctaBtn: { id: 'Hubungi Kami untuk Info Lengkap', en: 'Contact Us for More Info' }
@@ -308,7 +369,6 @@ const translations = {
       en: 'Full access to all tools and analysis to maximize your trading profit'
     },
 
-    // Benefits
     benefit1Title: { id: 'Daily Market Analysis', en: 'Daily Market Analysis' },
     benefit1Desc: {
       id: 'Analisa pasar komprehensif setiap hari sebelum market buka, termasuk outlook dan saham-saham yang menarik untuk hari itu',
@@ -350,7 +410,6 @@ const translations = {
       en: 'Join the exclusive Pro member community for sharing and networking'
     },
 
-    // Why Go Pro
     whyTitle: { id: 'Why Go Pro?', en: 'Why Go Pro?' },
     why1Title: { id: 'Hemat Waktu', en: 'Save Time' },
     why1Desc: {
@@ -373,7 +432,6 @@ const translations = {
       en: 'Accelerate your learning curve and reach profit targets faster with the right guidance.'
     },
 
-    // CTA
     ctaTitle: { id: 'Ready to Level Up?', en: 'Ready to Level Up?' },
     ctaText: {
       id: 'Bergabunglah dengan member Pro dan nikmati semua benefit untuk trading yang lebih menguntungkan',
@@ -397,7 +455,6 @@ const translations = {
     },
     overviewCardTitle: { id: 'Apa yang Anda Dapatkan?', en: 'What Do You Get?' },
 
-    // Analysis Features
     feature1Title: { id: 'Market Overview', en: 'Market Overview' },
     feature1Desc: {
       id: 'Ringkasan kondisi pasar global dan regional yang mempengaruhi IHSG, termasuk sentimen dan faktor-faktor kunci yang perlu diperhatikan hari ini',
@@ -429,7 +486,6 @@ const translations = {
       en: 'Trading ideas based on opportunities arising from technical and fundamental analysis'
     },
 
-    // Analysis Format
     formatTitle: { id: 'Format Analisa', en: 'Analysis Format' },
     format1Title: { id: 'Morning Brief', en: 'Morning Brief' },
     format1Desc: {
@@ -447,7 +503,6 @@ const translations = {
       en: 'Summary of today\'s movements and outlook for tomorrow (16:30 WIB)'
     },
 
-    // Pro Member Card
     proCardTitle: { id: 'Untuk Member Pro', en: 'For Pro Members' },
     proCardText: {
       id: 'Member GaleriSaham Pro mendapatkan akses penuh ke semua daily analysis dengan tambahan:',
@@ -460,7 +515,6 @@ const translations = {
     proCardItem5: { id: 'Priority response untuk pertanyaan tentang analisa', en: 'Priority response for questions about analysis' },
     proCardBtn: { id: 'Upgrade ke Pro', en: 'Upgrade to Pro' },
 
-    // CTA
     ctaTitle: { id: 'Jangan Trading Blind!', en: 'Don\'t Trade Blind!' },
     ctaText: {
       id: 'Dapatkan insight dan analisa profesional setiap hari untuk keputusan trading yang lebih baik',
@@ -477,24 +531,20 @@ const translations = {
       en: 'Ready to help your trading journey towards success'
     },
 
-    // Contact Cards
     addressTitle: { id: 'Alamat Kantor', en: 'Office Address' },
     emailTitle: { id: 'Email', en: 'Email' },
     socialTitle: { id: 'Social Media', en: 'Social Media' },
     hoursTitle: { id: 'Jam Operasional', en: 'Operating Hours' },
 
-    // Email labels
     emailGeneral: { id: 'Umum', en: 'General' },
     emailSupport: { id: 'Support', en: 'Support' },
     emailPartnership: { id: 'Partnership', en: 'Partnership' },
 
-    // Hours
     weekdays: { id: 'Senin - Jumat', en: 'Monday - Friday' },
     saturday: { id: 'Sabtu', en: 'Saturday' },
     sundayHoliday: { id: 'Minggu & Libur', en: 'Sunday & Holidays' },
     closed: { id: 'Tutup', en: 'Closed' },
 
-    // Consultation Card
     consultTitle: { id: 'Ingin Berkonsultasi?', en: 'Want to Consult?' },
     consultText: {
       id: 'Untuk konsultasi personal, informasi program, atau pertanyaan lainnya, silakan hubungi kami melalui:',
@@ -504,18 +554,12 @@ const translations = {
     consultDM: { id: 'Direct Message', en: 'Direct Message' },
     consultBtn: { id: 'WhatsApp Kami', en: 'WhatsApp Us' },
 
-    // CTA
     ctaTitle: { id: 'Siap Memulai?', en: 'Ready to Start?' },
     ctaText: {
       id: 'Bergabunglah dengan ribuan trader yang telah sukses bersama GaleriSaham',
       en: 'Join thousands of traders who have succeeded with GaleriSaham'
     },
     ctaBtn: { id: 'Lihat Program Kami', en: 'View Our Programs' }
-  },
-
-  // Language Switcher
-  langSwitcher: {
-    label: { id: 'Bahasa', en: 'Language' }
   }
 };
 
