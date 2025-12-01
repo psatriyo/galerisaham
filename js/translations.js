@@ -6,6 +6,7 @@ const translations = {
     services: { id: 'Layanan', en: 'Services' },
     about: { id: 'Tentang', en: 'About' },
     programs: { id: 'Program', en: 'Programs' },
+    calendar: { id: 'Kalender', en: 'Calendar' },
     contact: { id: 'Kontak', en: 'Contact' }
   },
 
@@ -560,6 +561,116 @@ const translations = {
       en: 'Join thousands of traders who have succeeded with GaleriSaham'
     },
     ctaBtn: { id: 'Lihat Program Kami', en: 'View Our Programs' }
+  },
+
+  // Calendar Page
+  calendar: {
+    label: { id: 'Kalender Event', en: 'Event Calendar' },
+    heroTitle: { id: 'Jadwal Event GaleriSaham', en: 'GaleriSaham Event Schedule' },
+    heroSubtitle: {
+      id: 'Temukan workshop, seminar, dan gathering yang akan membantu Anda menjadi trader yang lebih baik. Bergabunglah dengan komunitas kami!',
+      en: 'Discover workshops, seminars, and gatherings that will help you become a better trader. Join our community!'
+    },
+
+    // Calendar Days
+    monthTitle: { id: 'Desember 2025', en: 'December 2025' },
+    sun: { id: 'Min', en: 'Sun' },
+    mon: { id: 'Sen', en: 'Mon' },
+    tue: { id: 'Sel', en: 'Tue' },
+    wed: { id: 'Rab', en: 'Wed' },
+    thu: { id: 'Kam', en: 'Thu' },
+    fri: { id: 'Jum', en: 'Fri' },
+    sat: { id: 'Sab', en: 'Sat' },
+    dec: { id: 'Des', en: 'Dec' },
+
+    // Upcoming Events
+    upcomingLabel: { id: 'Event Mendatang', en: 'Upcoming Events' },
+    upcomingTitle: { id: 'Event Mendatang', en: 'Upcoming Events' },
+    upcomingSubtitle: {
+      id: 'Jangan lewatkan kesempatan untuk belajar dan bertemu dengan sesama trader!',
+      en: "Don't miss the opportunity to learn and meet fellow traders!"
+    },
+
+    // Badges
+    badgeOnsite: { id: 'Onsite', en: 'Onsite' },
+    badgeOnline: { id: 'Online', en: 'Online' },
+
+    // Event 1 - Singapore Workshop
+    event1Title: { id: 'Trading Mastery Workshop - Singapore Edition', en: 'Trading Mastery Workshop - Singapore Edition' },
+    event1Time: { id: 'Sabtu, 10:00 - 16:00 SGT', en: 'Saturday, 10:00 AM - 4:00 PM SGT' },
+    event1Location: { id: 'Marina Bay Sands Convention Centre, Singapore', en: 'Marina Bay Sands Convention Centre, Singapore' },
+    event1Desc: {
+      id: 'Bergabunglah dengan workshop intensif 6 jam kami di Marina Bay Sands, Singapore! Workshop ini dirancang khusus untuk trader yang ingin meningkatkan skill trading ke level profesional. Materi mencakup advanced technical analysis, institutional trading strategies, dan live market analysis dengan mentor berpengalaman. Peserta akan mendapatkan hands-on experience dengan real market scenarios dan exclusive trading toolkit.',
+      en: 'Join our intensive 6-hour workshop at Marina Bay Sands, Singapore! This workshop is specially designed for traders who want to elevate their trading skills to a professional level. Topics include advanced technical analysis, institutional trading strategies, and live market analysis with experienced mentors. Participants will gain hands-on experience with real market scenarios and receive an exclusive trading toolkit.'
+    },
+    event1Highlight1: { id: 'Advanced Technical Analysis', en: 'Advanced Technical Analysis' },
+    event1Highlight2: { id: 'Live Market Session', en: 'Live Market Session' },
+    event1Highlight3: { id: 'Networking Lunch', en: 'Networking Lunch' },
+
+    // Event 2 - YouTube Live
+    event2Title: { id: 'Live Trading Session - Market Analysis Q4 2025', en: 'Live Trading Session - Q4 2025 Market Analysis' },
+    event2Time: { id: 'Kamis, 11:00 - 12:00 WIB', en: 'Thursday, 11:00 AM - 12:00 PM WIB' },
+    event2Platform: { id: 'YouTube Live - GaleriSaham Official', en: 'YouTube Live - GaleriSaham Official' },
+    event2Desc: {
+      id: 'Sesi live streaming eksklusif di YouTube untuk membahas kondisi market terkini dan outlook Q4 2025. Analis senior kami akan melakukan live technical analysis, memberikan stock picks pilihan, dan menjawab pertanyaan langsung dari penonton. Sesi ini cocok untuk semua level trader yang ingin mendapatkan insight langsung dari profesional. Jangan lupa subscribe dan aktifkan notifikasi agar tidak ketinggalan!',
+      en: 'Exclusive live streaming session on YouTube to discuss current market conditions and Q4 2025 outlook. Our senior analysts will perform live technical analysis, provide stock picks, and answer questions directly from viewers. This session is suitable for all trader levels who want direct insights from professionals. Don\'t forget to subscribe and turn on notifications so you don\'t miss out!'
+    },
+    event2Highlight1: { id: 'Live Market Analysis', en: 'Live Market Analysis' },
+    event2Highlight2: { id: 'Q&A Session', en: 'Q&A Session' },
+    event2Highlight3: { id: 'Free Access', en: 'Free Access' },
+
+    // Event 3 - Singapore Gathering
+    event3Title: { id: 'GaleriSaham Traders Gathering - Singapore', en: 'GaleriSaham Traders Gathering - Singapore' },
+    event3Time: { id: 'Minggu, 14:00 - 18:00 SGT', en: 'Sunday, 2:00 PM - 6:00 PM SGT' },
+    event3Location: { id: 'Clarke Quay, Singapore', en: 'Clarke Quay, Singapore' },
+    event3Desc: {
+      id: 'Setelah workshop intensif di hari Sabtu, kami mengundang seluruh peserta dan member GaleriSaham untuk bergabung dalam casual networking gathering di Clarke Quay. Acara ini adalah kesempatan sempurna untuk berkenalan dengan sesama trader, bertukar pengalaman, dan memperluas network Anda di komunitas trading. Nikmati sore yang santai sambil membahas strategi dan berbagi insight trading dengan suasana yang lebih informal.',
+      en: 'After the intensive workshop on Saturday, we invite all participants and GaleriSaham members to join a casual networking gathering at Clarke Quay. This event is the perfect opportunity to meet fellow traders, exchange experiences, and expand your network in the trading community. Enjoy a relaxed afternoon discussing strategies and sharing trading insights in a more informal setting.'
+    },
+    event3Highlight1: { id: 'Networking Session', en: 'Networking Session' },
+    event3Highlight2: { id: 'Casual Meetup', en: 'Casual Meetup' },
+    event3Highlight3: { id: 'Free Refreshments', en: 'Free Refreshments' },
+
+    // Event 4 - Pro Webinar
+    event4Title: { id: 'Pro Members Exclusive Webinar - Year End Strategy', en: 'Pro Members Exclusive Webinar - Year End Strategy' },
+    event4Time: { id: 'Jumat, 19:00 - 21:00 WIB', en: 'Friday, 7:00 PM - 9:00 PM WIB' },
+    event4Platform: { id: 'Zoom Meeting - Pro Members Only', en: 'Zoom Meeting - Pro Members Only' },
+    event4Desc: {
+      id: 'Webinar eksklusif untuk member GaleriSaham Pro yang membahas strategi trading menjelang akhir tahun dan persiapan untuk tahun 2026. Topik mencakup review performa market 2025, sector rotation strategy, portfolio rebalancing tips, dan outlook market untuk tahun baru. Analis senior akan memberikan rekomendasi saham-saham potensial dan strategi untuk maximize return di periode window dressing. Sesi Q&A interaktif akan dibuka untuk membahas portofolio personal.',
+      en: 'Exclusive webinar for GaleriSaham Pro members discussing year-end trading strategies and preparation for 2026. Topics include 2025 market performance review, sector rotation strategy, portfolio rebalancing tips, and new year market outlook. Senior analysts will provide potential stock recommendations and strategies to maximize returns during the window dressing period. Interactive Q&A session will be open to discuss personal portfolios.'
+    },
+    event4Highlight1: { id: 'Year End Review', en: 'Year End Review' },
+    event4Highlight2: { id: '2026 Outlook', en: '2026 Outlook' },
+    event4Highlight3: { id: 'Portfolio Tips', en: 'Portfolio Tips' },
+
+    // Event 5 - Jakarta Workshop
+    event5Title: { id: 'Basic Trading Workshop - Jakarta', en: 'Basic Trading Workshop - Jakarta' },
+    event5Time: { id: 'Sabtu, 09:00 - 17:00 WIB', en: 'Saturday, 9:00 AM - 5:00 PM WIB' },
+    event5Location: { id: 'Hotel Pullman, Jakarta Pusat', en: 'Hotel Pullman, Central Jakarta' },
+    event5Desc: {
+      id: 'Workshop full-day untuk pemula yang ingin memulai perjalanan trading mereka dengan fondasi yang kuat. Materi mencakup pengenalan pasar modal Indonesia, cara membaca chart, basic technical analysis, fundamental analysis sederhana, dan pengenalan risk management. Peserta akan belajar langsung dengan praktik menggunakan platform trading dan mendapatkan panduan lengkap untuk memulai trading dengan benar. Lunch dan coffee break disediakan.',
+      en: 'Full-day workshop for beginners who want to start their trading journey with a strong foundation. Topics include introduction to the Indonesian capital market, how to read charts, basic technical analysis, simple fundamental analysis, and introduction to risk management. Participants will learn hands-on with trading platform practice and receive a complete guide to start trading properly. Lunch and coffee breaks provided.'
+    },
+    event5Highlight1: { id: 'Beginner Friendly', en: 'Beginner Friendly' },
+    event5Highlight2: { id: 'Hands-on Practice', en: 'Hands-on Practice' },
+    event5Highlight3: { id: 'Certificate', en: 'Certificate' },
+
+    // Contact Info
+    contactInfo: { id: 'Informasi & Pendaftaran:', en: 'Information & Registration:' },
+
+    // Buttons
+    registerBtn: { id: 'Daftar Sekarang', en: 'Register Now' },
+    reminderBtn: { id: 'Set Reminder', en: 'Set Reminder' },
+    joinProBtn: { id: 'Join Pro Membership', en: 'Join Pro Membership' },
+
+    // CTA
+    ctaTitle: { id: 'Ingin Tetap Update dengan Event Kami?', en: 'Want to Stay Updated with Our Events?' },
+    ctaText: {
+      id: 'Hubungi kami untuk mendapatkan informasi terbaru tentang workshop, seminar, dan gathering GaleriSaham.',
+      en: 'Contact us to get the latest information about GaleriSaham workshops, seminars, and gatherings.'
+    },
+    ctaBtn1: { id: 'Hubungi Kami', en: 'Contact Us' },
+    ctaBtn2: { id: 'Join Pro Membership', en: 'Join Pro Membership' }
   }
 };
 

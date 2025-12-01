@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="GaleriSaham Events Calendar - Jadwal Workshop, Seminar, dan Gathering untuk Trader Indonesia">
+    <title>Kalender Event - GaleriSaham</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo"><a href="../index.html">Galeri<span>Saham</span></a></div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home" data-i18n="nav.home">Beranda</a></li>
+                <li><a href="../index.html#services" data-i18n="nav.services">Layanan</a></li>
+                <li><a href="../index.html#about" data-i18n="nav.about">Tentang</a></li>
+                <li><a href="../index.html#programs" data-i18n="nav.programs">Program</a></li>
+                <li><a href="calendar.html" data-i18n="nav.calendar">Kalender</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Kontak</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="lang-switcher">
+                    <button class="lang-btn" data-lang="id">ID</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero calendar-hero">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 2rem;">
+                <span class="section-label" data-i18n="calendar.label">Event Calendar</span>
+                <h1 data-i18n="calendar.heroTitle">Jadwal Event GaleriSaham</h1>
+                <p data-i18n="calendar.heroSubtitle">Temukan workshop, seminar, dan gathering yang akan membantu Anda menjadi trader yang lebih baik. Bergabunglah dengan komunitas kami!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="calendar-section">
+        <div class="container">
+            <div class="calendar-wrapper">
+                <div class="calendar-header">
+                    <h2 class="calendar-month" data-i18n="calendar.monthTitle">Desember 2025</h2>
+                    <div class="calendar-nav">
+                        <button class="calendar-nav-btn" disabled>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="calendar-nav-btn" disabled>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="calendar-grid">
+                    <div class="calendar-day-header" data-i18n="calendar.sun">Min</div>
+                    <div class="calendar-day-header" data-i18n="calendar.mon">Sen</div>
+                    <div class="calendar-day-header" data-i18n="calendar.tue">Sel</div>
+                    <div class="calendar-day-header" data-i18n="calendar.wed">Rab</div>
+                    <div class="calendar-day-header" data-i18n="calendar.thu">Kam</div>
+                    <div class="calendar-day-header" data-i18n="calendar.fri">Jum</div>
+                    <div class="calendar-day-header" data-i18n="calendar.sat">Sab</div>
+
+                    <!-- Row 1 -->
+                    <div class="calendar-day empty"></div>
+                    <div class="calendar-day"><span>1</span></div>
+                    <div class="calendar-day"><span>2</span></div>
+                    <div class="calendar-day"><span>3</span></div>
+                    <div class="calendar-day has-event" data-event="event2"><span>4</span><div class="event-dot"></div></div>
+                    <div class="calendar-day"><span>5</span></div>
+                    <div class="calendar-day has-event" data-event="event1"><span>6</span><div class="event-dot green"></div></div>
+
+                    <!-- Row 2 -->
+                    <div class="calendar-day has-event" data-event="event3"><span>7</span><div class="event-dot amber"></div></div>
+                    <div class="calendar-day"><span>8</span></div>
+                    <div class="calendar-day"><span>9</span></div>
+                    <div class="calendar-day"><span>10</span></div>
+                    <div class="calendar-day"><span>11</span></div>
+                    <div class="calendar-day has-event" data-event="event4"><span>12</span><div class="event-dot purple"></div></div>
+                    <div class="calendar-day has-event" data-event="event5"><span>13</span><div class="event-dot blue"></div></div>
+
+                    <!-- Row 3 -->
+                    <div class="calendar-day"><span>14</span></div>
+                    <div class="calendar-day"><span>15</span></div>
+                    <div class="calendar-day"><span>16</span></div>
+                    <div class="calendar-day"><span>17</span></div>
+                    <div class="calendar-day"><span>18</span></div>
+                    <div class="calendar-day"><span>19</span></div>
+                    <div class="calendar-day"><span>20</span></div>
+
+                    <!-- Row 4 -->
+                    <div class="calendar-day"><span>21</span></div>
+                    <div class="calendar-day"><span>22</span></div>
+                    <div class="calendar-day"><span>23</span></div>
+                    <div class="calendar-day"><span>24</span></div>
+                    <div class="calendar-day"><span>25</span></div>
+                    <div class="calendar-day"><span>26</span></div>
+                    <div class="calendar-day"><span>27</span></div>
+
+                    <!-- Row 5 -->
+                    <div class="calendar-day"><span>28</span></div>
+                    <div class="calendar-day"><span>29</span></div>
+                    <div class="calendar-day"><span>30</span></div>
+                    <div class="calendar-day"><span>31</span></div>
+                    <div class="calendar-day empty"></div>
+                    <div class="calendar-day empty"></div>
+                    <div class="calendar-day empty"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="events-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="calendar.upcomingLabel">Upcoming Events</span>
+                <h2 data-i18n="calendar.upcomingTitle">Event Mendatang</h2>
+                <p data-i18n="calendar.upcomingSubtitle">Jangan lewatkan kesempatan untuk belajar dan bertemu dengan sesama trader!</p>
+            </div>
+
+            <div class="events-grid">
+                <!-- Event 1: Onsite Marina Bay Singapore -->
+                <div class="event-card fade-in" id="event1">
+                    <div class="event-badge onsite" data-i18n="calendar.badgeOnsite">Onsite</div>
+                    <div class="event-date">
+                        <div class="event-date-day">6</div>
+                        <div class="event-date-month" data-i18n="calendar.dec">Des</div>
+                        <div class="event-date-year">2025</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 data-i18n="calendar.event1Title">Trading Mastery Workshop - Singapore Edition</h3>
+                        <div class="event-meta">
+                            <div class="event-meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span data-i18n="calendar.event1Time">Sabtu, 10:00 - 16:00 SGT</span>
+                            </div>
+                            <div class="event-meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span data-i18n="calendar.event1Location">Marina Bay Sands Convention Centre, Singapore</span>
+                            </div>
+                        </div>
+                        <p class="event-description" data-i18n="calendar.event1Desc">Bergabunglah dengan workshop intensif 6 jam kami di Marina Bay Sands, Singapore! Workshop ini dirancang khusus untuk trader yang ingin meningkatkan skill trading ke level profesional. Materi mencakup advanced technical analysis, institutional trading strategies, dan live market analysis dengan mentor berpengalaman. Peserta akan mendapatkan hands-on experience dengan real market scenarios dan exclusive trading toolkit.</p>
+                        <div class="event-highlights">
+                            <span class="event-highlight" data-i18n="calendar.event1Highlight1">Advanced Technical Analysis</span>
+                            <span class="event-highlight" data-i18n="calendar.event1Highlight2">Live Market Session</span>
+                            <span class="event-highlight" data-i18n="calendar.event1Highlight3">Networking Lunch</span>
+                        </div>
+                        <div class="event-contact">
+                            <h4 data-i18n="calendar.contactInfo">Informasi & Pendaftaran:</h4>
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                    <span>+65 8123 4567</span>
+                                </div>
+                                <div class="contact-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                    <span>events.sg@galerisaham.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary" data-i18n="calendar.registerBtn">Daftar Sekarang</a>
+                    </div>
+                </div>
+
+                <!-- Event 2: Online YouTube Session -->
+                <div class="event-card fade-in fade-in-delay-1" id="event2">
+                    <div class="event-badge online" data-i18n="calendar.badgeOnline">Online</div>
+                    <div class="event-date">
+                        <div class="event-date-day">4</div>
+                        <div class="event-date-month" data-i18n="calendar.dec">Des</div>
+                        <div class="event-date-year">2025</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 data-i18n="calendar.event2Title">Live Trading Session - Market Analysis Q4 2025</h3>
+                        <div class="event-meta">
+                            <div class="event-meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span data-i18n="calendar.event2Time">Kamis, 11:00 - 12:00 WIB</span>
+                            </div>
+                            <div class="event-meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                                </svg>
+                                <span data-i18n="calendar.event2Platform">YouTube Live - GaleriSaham Official</span>
+                            </div>
+                        </div>
+                        <p class="event-description" data-i18n="calendar.event2Desc">Sesi live streaming eksklusif di YouTube untuk membahas kondisi market terkini dan outlook Q4 2025. Analis senior kami akan melakukan live technical analysis, memberikan stock picks pilihan, dan menjawab pertanyaan langsung dari penonton. Sesi ini cocok untuk semua level trader yang ingin mendapatkan insight langsung dari profesional. Jangan lupa subscribe dan aktifkan notifikasi agar tidak ketinggalan!</p>
+                        <div class="event-highlights">
+                            <span class="event-highlight" data-i18n="calendar.event2Highlight1">Live Market Analysis</span>
+                            <span class="event-highlight" data-i18n="calendar.event2Highlight2">Q&A Session</span>
+                            <span class="event-highlight" data-i18n="calendar.event2Highlight3">Free Access</span>
+                        </div>
+                        <div class="event-contact">
+                            <h4 data-i18n="calendar.contactInfo">Informasi & Pendaftaran:</h4>
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                    <span>+62 812 3456 7890</span>
+                                </div>
+                                <div class="contact-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                    <span>live@galerisaham.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary" data-i18n="calendar.reminderBtn">Set Reminder</a>
+                    </div>
+                </div>
+
+                <!-- Event 3: Onsite Gathering Singapore -->
+                <div class="event-card fade-in fade-in-delay-2" id="event3">
+                    <div class="event-badge onsite" data-i18n="calendar.badgeOnsite">Onsite</div>
+                    <div class="event-date">
+                        <div class="event-date-day">7</div>
+                        <div class="event-date-month" data-i18n="calendar.dec">Des</div>
+                        <div class="event-date-year">2025</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 data-i18n="calendar.event3Title">GaleriSaham Traders Gathering - Singapore</h3>
+                        <div class="event-meta">
+                            <div class="event-meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span data-i18n="calendar.event3Time">Minggu, 14:00 - 18:00 SGT</span>
+                            </div>
+                            <div class="event-meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span data-i18n="calendar.event3Location">Clarke Quay, Singapore</span>
+                            </div>
+                        </div>
+                        <p class="event-description" data-i18n="calendar.event3Desc">Setelah workshop intensif di hari Sabtu, kami mengundang seluruh peserta dan member GaleriSaham untuk bergabung dalam casual networking gathering di Clarke Quay. Acara ini adalah kesempatan sempurna untuk berkenalan dengan sesama trader, bertukar pengalaman, dan memperluas network Anda di komunitas trading. Nikmati sore yang santai sambil membahas strategi dan berbagi insight trading dengan suasana yang lebih informal.</p>
+                        <div class="event-highlights">
+                            <span class="event-highlight" data-i18n="calendar.event3Highlight1">Networking Session</span>
+                            <span class="event-highlight" data-i18n="calendar.event3Highlight2">Casual Meetup</span>
+                            <span class="event-highlight" data-i18n="calendar.event3Highlight3">Free Refreshments</span>
+                        </div>
+                        <div class="event-contact">
+                            <h4 data-i18n="calendar.contactInfo">Informasi & Pendaftaran:</h4>
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                    <span>+65 8123 4567</span>
+                                </div>
+                                <div class="contact-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                    <span>events.sg@galerisaham.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary" data-i18n="calendar.registerBtn">Daftar Sekarang</a>
+                    </div>
+                </div>
+
+                <!-- Event 4: Monthly Pro Webinar -->
+                <div class="event-card fade-in fade-in-delay-3" id="event4">
+                    <div class="event-badge online" data-i18n="calendar.badgeOnline">Online</div>
+                    <div class="event-date">
+                        <div class="event-date-day">12</div>
+                        <div class="event-date-month" data-i18n="calendar.dec">Des</div>
+                        <div class="event-date-year">2025</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 data-i18n="calendar.event4Title">Pro Members Exclusive Webinar - Year End Strategy</h3>
+                        <div class="event-meta">
+                            <div class="event-meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span data-i18n="calendar.event4Time">Jumat, 19:00 - 21:00 WIB</span>
+                            </div>
+                            <div class="event-meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                    <line x1="8" y1="21" x2="16" y2="21"/>
+                                    <line x1="12" y1="17" x2="12" y2="21"/>
+                                </svg>
+                                <span data-i18n="calendar.event4Platform">Zoom Meeting - Pro Members Only</span>
+                            </div>
+                        </div>
+                        <p class="event-description" data-i18n="calendar.event4Desc">Webinar eksklusif untuk member GaleriSaham Pro yang membahas strategi trading menjelang akhir tahun dan persiapan untuk tahun 2026. Topik mencakup review performa market 2025, sector rotation strategy, portfolio rebalancing tips, dan outlook market untuk tahun baru. Analis senior akan memberikan rekomendasi saham-saham potensial dan strategi untuk maximize return di periode window dressing. Sesi Q&A interaktif akan dibuka untuk membahas portofolio personal.</p>
+                        <div class="event-highlights">
+                            <span class="event-highlight" data-i18n="calendar.event4Highlight1">Year End Review</span>
+                            <span class="event-highlight" data-i18n="calendar.event4Highlight2">2026 Outlook</span>
+                            <span class="event-highlight" data-i18n="calendar.event4Highlight3">Portfolio Tips</span>
+                        </div>
+                        <div class="event-contact">
+                            <h4 data-i18n="calendar.contactInfo">Informasi & Pendaftaran:</h4>
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                    <span>+62 812 9876 5432</span>
+                                </div>
+                                <div class="contact-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                    <span>pro@galerisaham.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="pro.html" class="btn btn-primary" data-i18n="calendar.joinProBtn">Join Pro Membership</a>
+                    </div>
+                </div>
+
+                <!-- Event 5: Basic Trading Workshop Jakarta -->
+                <div class="event-card fade-in fade-in-delay-4" id="event5">
+                    <div class="event-badge onsite" data-i18n="calendar.badgeOnsite">Onsite</div>
+                    <div class="event-date">
+                        <div class="event-date-day">13</div>
+                        <div class="event-date-month" data-i18n="calendar.dec">Des</div>
+                        <div class="event-date-year">2025</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 data-i18n="calendar.event5Title">Basic Trading Workshop - Jakarta</h3>
+                        <div class="event-meta">
+                            <div class="event-meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span data-i18n="calendar.event5Time">Sabtu, 09:00 - 17:00 WIB</span>
+                            </div>
+                            <div class="event-meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span data-i18n="calendar.event5Location">Hotel Pullman, Jakarta Pusat</span>
+                            </div>
+                        </div>
+                        <p class="event-description" data-i18n="calendar.event5Desc">Workshop full-day untuk pemula yang ingin memulai perjalanan trading mereka dengan fondasi yang kuat. Materi mencakup pengenalan pasar modal Indonesia, cara membaca chart, basic technical analysis, fundamental analysis sederhana, dan pengenalan risk management. Peserta akan belajar langsung dengan praktik menggunakan platform trading dan mendapatkan panduan lengkap untuk memulai trading dengan benar. Lunch dan coffee break disediakan.</p>
+                        <div class="event-highlights">
+                            <span class="event-highlight" data-i18n="calendar.event5Highlight1">Beginner Friendly</span>
+                            <span class="event-highlight" data-i18n="calendar.event5Highlight2">Hands-on Practice</span>
+                            <span class="event-highlight" data-i18n="calendar.event5Highlight3">Certificate</span>
+                        </div>
+                        <div class="event-contact">
+                            <h4 data-i18n="calendar.contactInfo">Informasi & Pendaftaran:</h4>
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                    <span>+62 812 3456 7890</span>
+                                </div>
+                                <div class="contact-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                    <span>workshop@galerisaham.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary" data-i18n="calendar.registerBtn">Daftar Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-i18n="calendar.ctaTitle">Ingin Tetap Update dengan Event Kami?</h2>
+                <p data-i18n="calendar.ctaText">Hubungi kami untuk mendapatkan informasi terbaru tentang workshop, seminar, dan gathering GaleriSaham.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="calendar.ctaBtn1">Hubungi Kami</a>
+                    <a href="pro.html" class="btn btn-secondary btn-lg" data-i18n="calendar.ctaBtn2">Join Pro Membership</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GaleriSaham</h3>
+                    <p>We Build Profitable Traders</p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="footer.programTitle">Program</h3>
+                    <ul>
+                        <li><a href="stm.html" data-i18n="footer.stmProgram">STM Program</a></li>
+                        <li><a href="pro.html" data-i18n="footer.proMembership">GaleriSaham Pro</a></li>
+                        <li><a href="workshop.html" data-i18n="footer.workshop">Workshop</a></li>
+                        <li><a href="calendar.html" data-i18n="nav.calendar">Kalender</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2009-2025 GaleriSaham.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/translations.js" defer></script>
+    <script src="../js/main.js" defer></script>
+</body>
+</html>
