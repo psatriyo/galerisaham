@@ -11,38 +11,43 @@
 }
 
 :root {
-  /* Primary Colors - Deep Professional Blue */
-  --primary-900: #0c1929;
-  --primary-800: #0f2744;
-  --primary-700: #1a365d;
-  --primary-600: #234876;
-  --primary-500: #2d5a8a;
-  --primary-400: #4a7ab0;
-  --primary-300: #7aa3d0;
-  --primary-200: #b3cce6;
-  --primary-100: #e1ecf7;
+  /* Primary Colors - GaleriSaham Brand Blue */
+  --primary-900: #0a1628;
+  --primary-800: #122640;
+  --primary-700: #1a3a5c;
+  --primary-600: #219fda;
+  --primary-500: #3bb3e8;
+  --primary-400: #7599b7;
+  --primary-300: #9cbdd4;
+  --primary-200: #c8ddef;
+  --primary-100: #e8f2fa;
 
-  /* Accent - Success Green (Represents Profit/Growth) */
-  --accent-500: #10b981;
-  --accent-400: #34d399;
-  --accent-600: #059669;
+  /* Accent - GaleriSaham Orange (Brand Energy) */
+  --accent-500: #ff6d29;
+  --accent-400: #ff8f5e;
+  --accent-600: #e55a1b;
 
-  /* Secondary Accent - Warm Amber */
-  --amber-500: #f59e0b;
-  --amber-400: #fbbf24;
-  --amber-600: #d97706;
+  /* Secondary Accent - Gold (Premium/Profit) */
+  --amber-500: #ffcf56;
+  --amber-400: #ffdb4f;
+  --amber-600: #e5b83e;
 
-  /* Neutrals */
-  --slate-900: #0f172a;
-  --slate-800: #1e293b;
-  --slate-700: #334155;
-  --slate-600: #475569;
-  --slate-500: #64748b;
-  --slate-400: #94a3b8;
-  --slate-300: #cbd5e1;
-  --slate-200: #e2e8f0;
-  --slate-100: #f1f5f9;
-  --slate-50: #f8fafc;
+  /* Tertiary - Teal Green (Growth/Profit) */
+  --green-500: #5cd6bf;
+  --green-400: #7ee0cd;
+  --green-600: #3fbfa5;
+
+  /* Neutrals - Warm-tinted to match GaleriSaham brand */
+  --slate-900: #22272a;
+  --slate-800: #2d3338;
+  --slate-700: #3d4450;
+  --slate-600: #525866;
+  --slate-500: #6b7280;
+  --slate-400: #9ca3af;
+  --slate-300: #c8ced6;
+  --slate-200: #e2e5ed;
+  --slate-100: #f0f2f5;
+  --slate-50: #f5f7fa;
   --white: #ffffff;
 
   /* Functional */
@@ -199,13 +204,13 @@ section {
 .btn-primary {
   background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-700) 100%);
   color: var(--white);
-  box-shadow: 0 4px 14px 0 rgba(26, 54, 93, 0.3);
+  box-shadow: 0 4px 14px 0 rgba(33, 159, 218, 0.3);
 }
 
 .btn-primary:hover {
   background: linear-gradient(135deg, var(--primary-500) 0%, var(--primary-600) 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px 0 rgba(26, 54, 93, 0.4);
+  box-shadow: 0 6px 20px 0 rgba(33, 159, 218, 0.35);
 }
 
 .btn-secondary {
@@ -223,13 +228,13 @@ section {
 .btn-accent {
   background: linear-gradient(135deg, var(--accent-500) 0%, var(--accent-600) 100%);
   color: var(--white);
-  box-shadow: 0 4px 14px 0 rgba(16, 185, 129, 0.3);
+  box-shadow: 0 4px 14px 0 rgba(255, 109, 47, 0.3);
 }
 
 .btn-accent:hover {
   background: linear-gradient(135deg, var(--accent-400) 0%, var(--accent-500) 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px 0 rgba(16, 185, 129, 0.4);
+  box-shadow: 0 6px 20px 0 rgba(255, 109, 47, 0.4);
 }
 
 .btn-lg {
@@ -396,8 +401,8 @@ nav {
   right: 0;
   bottom: 0;
   background:
-    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(26, 54, 93, 0.08) 0%, transparent 50%),
-    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(33, 159, 218, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(255, 109, 47, 0.06) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -517,7 +522,7 @@ nav {
 .hero-chart {
   width: 100%;
   aspect-ratio: 4/3;
-  background: linear-gradient(135deg, var(--primary-800) 0%, var(--primary-900) 100%);
+  background: linear-gradient(135deg, var(--slate-900) 0%, var(--primary-800) 100%);
   border-radius: var(--radius-2xl);
   box-shadow: var(--shadow-2xl);
   overflow: hidden;
@@ -550,8 +555,8 @@ nav {
   align-items: center;
   gap: 0.25rem;
   padding: 0.25rem 0.5rem;
-  background: rgba(16, 185, 129, 0.2);
-  color: var(--accent-400);
+  background: rgba(255, 109, 47, 0.2);
+  color: var(--amber-400);
   font-size: 0.75rem;
   font-weight: 600;
   border-radius: var(--radius-sm);
@@ -570,7 +575,7 @@ nav {
   align-items: center;
   gap: 0.5rem;
   font-size: 0.875rem;
-  color: var(--accent-400);
+  color: var(--amber-400);
   margin-bottom: 1.5rem;
 }
 
@@ -595,7 +600,7 @@ nav {
 
 .chart-line-path {
   fill: none;
-  stroke: var(--accent-400);
+  stroke: var(--accent-500);
   stroke-width: 2.5;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -641,12 +646,12 @@ nav {
 }
 
 .floating-icon.green {
-  background: rgba(16, 185, 129, 0.1);
+  background: rgba(255, 109, 47, 0.1);
   color: var(--accent-500);
 }
 
 .floating-icon.blue {
-  background: rgba(26, 54, 93, 0.1);
+  background: rgba(33, 159, 218, 0.1);
   color: var(--primary-600);
 }
 
@@ -871,7 +876,7 @@ nav {
 }
 
 .program-icon.green {
-  background: rgba(16, 185, 129, 0.15);
+  background: rgba(255, 109, 47, 0.15);
   color: var(--accent-500);
 }
 
@@ -1062,7 +1067,7 @@ nav {
    CTA SECTION
 ======================================== */
 .cta {
-  background: linear-gradient(135deg, var(--primary-800) 0%, var(--primary-900) 100%);
+  background: linear-gradient(135deg, var(--primary-800) 0%, var(--slate-900) 100%);
   position: relative;
   overflow: hidden;
 }
@@ -1072,8 +1077,8 @@ nav {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 50% 80% at 20% 40%, rgba(16, 185, 129, 0.15) 0%, transparent 50%),
-    radial-gradient(ellipse 50% 50% at 80% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+    radial-gradient(ellipse 50% 80% at 20% 40%, rgba(255, 207, 86, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 50% at 80% 50%, rgba(33, 159, 218, 0.1) 0%, transparent 50%);
 }
 
 .cta .container {
@@ -1556,7 +1561,7 @@ footer {
 
 .calendar-day.has-event {
   cursor: pointer;
-  background: var(--primary-50, #f0f5ff);
+  background: var(--primary-50, var(--slate-50));
 }
 
 .calendar-day.has-event:hover {
@@ -1631,7 +1636,7 @@ footer {
 }
 
 .event-badge.onsite {
-  background: rgba(16, 185, 129, 0.15);
+  background: rgba(255, 109, 47, 0.15);
   color: var(--accent-600);
 }
 
