@@ -59,7 +59,7 @@ galerisaham/
 
 ## 🎨 Design Features
 
-- **Color Scheme**: Professional blue (#1a5490) with accent orange (#f39c12)
+- **Color Scheme**: GaleriSaham brand blue (#219fda) with accent orange (#ff6d29) and gold (#ffcf56)
 - **Typography**: System font stack for instant rendering
 - **Layout**: CSS Grid and Flexbox for modern layouts
 - **Animations**: Smooth transitions with reduced motion support
