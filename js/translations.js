@@ -55,35 +55,35 @@ const translations = {
       id: 'From daily analysis to personal mentoring, we provide comprehensive Financial Plan, Comprehensive Tools, and Learning Community for your trading journey.',
       en: 'From daily analysis to personal mentoring, we provide comprehensive financial plans, tools, and a learning community for your trading journey.'
     },
-    feature1Title: { id: 'Analisa Teknikal', en: 'Technical Analysis' },
+    feature1Title: { id: 'PLAN', en: 'PLAN' },
     feature1Desc: {
-      id: 'Analisa chart profesional dengan indikator teknikal canggih untuk timing entry dan exit yang presisi.',
-      en: 'Professional chart analysis with advanced technical indicators for precise entry and exit timing.'
+      id: 'Memiliki trading plan itu sangat penting, tapi bukan yang paling penting. Paling penting adalah menjalankan trading plan. Biasanya, plan beli dijalankan, plan jual tidak. Harusnya jual nanti, dijual sekarang. Harusnya dijual sekarang, malah ga dijual dan berakhir nyangkut. Bersama GaleriSaham, Kamu akan belajar menganalisa dan menyusun trading plan yang sistematis, mudah dijalankan, dan tentunya profitable. Profit Trader Module, Trading Planner Anda.',
+      en: 'Having a trading plan is very important, but it is not the most important thing. The most important thing is executing the trading plan. Usually, the buy plan is executed, but the sell plan is not. What should be sold later gets sold now. What should be sold now is not sold and ends up stuck. With GaleriSaham, you will learn to analyze and build a systematic, easy-to-follow, and profitable trading plan. Profit Trader Module, your Trading Planner.'
     },
-    feature2Title: { id: 'Analisa Fundamental', en: 'Fundamental Analysis' },
+    feature2Title: { id: 'TOOLS', en: 'TOOLS' },
     feature2Desc: {
-      id: 'Evaluasi mendalam laporan keuangan dan valuasi perusahaan untuk keputusan investasi yang solid.',
-      en: 'In-depth evaluation of financial reports and company valuations for solid investment decisions.'
+      id: 'Banyak yang trading pakai feeling, atau percaya kata orang. Semakin mewah mobilnya, semakin percaya kita. Salah, karena itu adalah marketing strategy, bukan trading strategy. Bukan mobil, tapi tools analisa kita yang harus reliable. Dengan tools yang tepat, Kamu akan lebih confident karena faktor ego, feeling, dan inkompetensi akan menghilang. Profit Trader Module, your reliable tool.',
+      en: 'Many people trade by feeling or by trusting what others say. The fancier the car, the more we believe them. That is wrong, because it is a marketing strategy, not a trading strategy. It is not the car, but our analysis tools that must be reliable. With the right tools, you will be more confident because ego, feeling, and incompetence fade away. Profit Trader Module, your reliable tool.'
     },
-    feature3Title: { id: 'Trading Plan', en: 'Trading Plan' },
+    feature3Title: { id: 'LEARNING', en: 'LEARNING' },
     feature3Desc: {
-      id: 'Rencana trading sistematis dengan risk management yang jelas untuk profit yang konsisten.',
-      en: 'Systematic trading plans with clear risk management for consistent profits.'
+      id: 'Mendengar doang ga bikin kamu paham. Membaca doang ga bikin kamu mengerti. Praktek adalah kunci utama. Pastikan ketika praktek, sudah tidak lagi bingung harus pake indikator apa, cara analisanya bagaimana, dan bobot belinya berapa. Learn together with us. GaleriSaham memiliki kelas workshop level intermediate ke atas seperti Profit Trader Workshop (khusus member), Fibonacci Trading Strategy, hingga Fundamental Masterclass Workshop.',
+      en: 'Listening alone will not make you understand. Reading alone will not make you get it. Practice is the key. Make sure that when you practice, you are no longer confused about which indicator to use, how to analyze, or how much buying weight to allocate. Learn together with us. GaleriSaham has intermediate-and-above workshops such as Profit Trader Workshop (members only), Fibonacci Trading Strategy, and Fundamental Masterclass Workshop.'
     },
-    feature4Title: { id: 'Komunitas Trader', en: 'Trader Community' },
+    feature4Title: { id: 'Personal Assistance', en: 'Personal Assistance' },
     feature4Desc: {
-      id: 'Bergabung dengan komunitas trader aktif untuk sharing, diskusi, dan dukungan trading.',
-      en: 'Join an active trader community for sharing, discussion, and trading support.'
+      id: 'Transaksi Anda mencapai level dimana Anda butuh partner dalam analisa, menyusun rencana, hingga review kinerja? Institutional DNA dan pengalaman kami akan sangat bermanfaat untuk peningkatan kinerja portfolio Anda. Mulai dari Portfolio Makeover, Trading Management, hingga Trend Optimization bisa Anda dapatkan di layanan Personal Assistance ini.',
+      en: 'Have your transactions reached the level where you need a partner for analysis, planning, and performance review? Our institutional DNA and experience can be highly useful for improving your portfolio performance. From Portfolio Makeover and Trading Management to Trend Optimization, you can access them through Personal Assistance.'
     },
-    feature5Title: { id: 'Edukasi Trading', en: 'Trading Education' },
+    feature5Title: { id: 'Fundamental Services', en: 'Fundamental Services' },
     feature5Desc: {
-      id: 'Program pembelajaran komprehensif dari dasar hingga advanced dengan metode proven.',
-      en: 'Comprehensive learning programs from basic to advanced with proven methods.'
+      id: 'Banyak yang menggampangkan analisa fundamental dengan cara yang salah. Fundamental dianggap simple, padahal kompleks. Namun jika Kamu paham kompleksitasnya dengan baik, maka ini akan menjadi simple. Jangan terbalik, meremehkan sesuatu yang kompleks akan berujung rugi. Pahami dulu kompleksitasnya, maka semua akan sederhana. Fundamental Masterclass Workshop adalah kelas eksklusif, onsite class only, untuk Anda yang mau naik level.',
+      en: 'Many people oversimplify fundamental analysis in the wrong way. Fundamentals are considered simple, even though they are complex. But if you understand the complexity well, it becomes simple. Do not get it backwards: underestimating something complex can lead to losses. Understand the complexity first, and everything becomes simpler. Fundamental Masterclass Workshop is an exclusive onsite-only class for those who want to level up.'
     },
-    feature6Title: { id: 'Konsultasi Personal', en: 'Personal Consultation' },
+    feature6Title: { id: 'Corporate Services', en: 'Corporate Services' },
     feature6Desc: {
-      id: 'Bimbingan langsung dari analis berpengalaman untuk strategi yang disesuaikan dengan profil Anda.',
-      en: 'Direct guidance from experienced analysts for strategies tailored to your profile.'
+      id: 'Dengan latar belakang institutional, kami juga memiliki program support bagi financial institution seperti dana pensiun, asuransi jiwa, hingga asset management. Talk with us privately.',
+      en: 'With our institutional background, we also provide support programs for financial institutions such as pension funds, life insurance, and asset management. Talk with us privately.'
     },
 
     // The Ugly Truth
@@ -118,54 +118,74 @@ const translations = {
     },
 
     // Programs Section
-    programsLabel: { id: 'Program Kami', en: 'Our Programs' },
+    programsLabel: { id: 'Our Programs', en: 'Our Programs' },
     programsTitle: {
-      id: 'Pilih Jalur Menuju Kesuksesan Trading',
-      en: 'Choose Your Path to Trading Success'
+      id: 'Choose Your Path to Success',
+      en: 'Choose Your Path to Success'
     },
     programsSubtitle: {
-      id: 'Program yang dirancang untuk setiap level trader, dari pemula hingga profesional.',
+      id: 'Program designed for every trader level, from beginner to professional.',
       en: 'Programs designed for every trader level, from beginner to professional.'
     },
-    program1Title: { id: 'STM - Systematic Trading', en: 'STM - Systematic Trading' },
+    program1Title: { id: 'Profit Trader Club', en: 'Profit Trader Club' },
     program1Desc: {
-      id: 'Program trading sistematis dengan pendekatan terstruktur untuk profit konsisten jangka panjang.',
-      en: 'Systematic trading program with a structured approach for long-term consistent profits.'
+      id: 'Workshop dan training untuk membangun skill trading praktis dengan pendekatan sistematis.',
+      en: 'Workshops and training to build practical trading skills with a systematic approach.'
     },
-    program1Feature1: { id: 'Daily trading signal', en: 'Daily trading signals' },
-    program1Feature2: { id: 'Risk management ketat', en: 'Strict risk management' },
-    program1Feature3: { id: 'Live trading session', en: 'Live trading sessions' },
+    program1Feature1: { id: 'Profit Trader Workshop', en: 'Profit Trader Workshop' },
+    program1Feature2: { id: 'Khusus member', en: 'Members only' },
+    program1Feature3: { id: 'Praktik langsung', en: 'Hands-on practice' },
     program1Btn: { id: 'Pelajari Lebih Lanjut', en: 'Learn More' },
 
-    program2Title: { id: 'GaleriSaham Pro', en: 'GaleriSaham Pro' },
+    program2Title: { id: 'Fundamental Masterclass', en: 'Fundamental Masterclass' },
     program2Desc: {
-      id: 'Membership premium dengan akses penuh ke semua analisa, tools eksklusif, dan bimbingan intensif.',
-      en: 'Premium membership with full access to all analysis, exclusive tools, and intensive guidance.'
+      id: 'Kelas eksklusif untuk memahami kompleksitas fundamental agar keputusan investasi menjadi lebih sederhana dan terarah.',
+      en: 'An exclusive class to understand fundamental complexity so investment decisions become simpler and more focused.'
     },
-    program2Feature1: { id: 'Full access analisa', en: 'Full analysis access' },
-    program2Feature2: { id: 'Priority support', en: 'Priority support' },
-    program2Feature3: { id: 'Monthly webinar', en: 'Monthly webinars' },
+    program2Feature1: { id: 'Onsite class only', en: 'Onsite class only' },
+    program2Feature2: { id: 'Advanced fundamental', en: 'Advanced fundamentals' },
+    program2Feature3: { id: 'Naik level investasi', en: 'Level up your investing' },
     program2Btn: { id: 'Pelajari Lebih Lanjut', en: 'Learn More' },
 
-    program3Title: { id: 'Profit Trader Club', en: 'Profit Trader Club' },
+    program3Title: { id: 'Specialty Workshop', en: 'Specialty Workshop' },
     program3Desc: {
-      id: 'Workshop dan training intensif untuk membangun skill trading dari nol hingga mahir.',
-      en: 'Intensive workshops and training to build trading skills from zero to expert.'
+      id: 'Kelas tematik untuk memperdalam strategi dan pendekatan trading tertentu sesuai kebutuhan trader.',
+      en: 'Thematic classes to deepen specific trading strategies and approaches based on trader needs.'
     },
-    program3Feature1: { id: 'Hands-on workshop', en: 'Hands-on workshops' },
-    program3Feature2: { id: 'Praktik langsung', en: 'Direct practice' },
-    program3Feature3: { id: 'Sertifikat completion', en: 'Completion certificate' },
+    program3Feature1: { id: 'Intermediate ke atas', en: 'Intermediate and above' },
+    program3Feature2: { id: 'Topik spesifik', en: 'Specific topics' },
+    program3Feature3: { id: 'Praktis dan aplikatif', en: 'Practical and applicable' },
     program3Btn: { id: 'Pelajari Lebih Lanjut', en: 'Learn More' },
 
-    program4Title: { id: 'Daily Analysis', en: 'Daily Analysis' },
+    program4Title: { id: 'Fibonacci Trading Strategy', en: 'Fibonacci Trading Strategy' },
     program4Desc: {
-      id: 'Analisa pasar harian dengan rekomendasi saham, entry point, dan target profit yang jelas.',
-      en: 'Daily market analysis with stock recommendations, clear entry points, and profit targets.'
+      id: 'Workshop strategi Fibonacci untuk membantu membaca area penting, menyusun skenario, dan mengelola trading plan.',
+      en: 'A Fibonacci strategy workshop to help identify key areas, build scenarios, and manage trading plans.'
     },
-    program4Feature1: { id: 'Morning brief', en: 'Morning brief' },
-    program4Feature2: { id: 'Intraday update', en: 'Intraday updates' },
-    program4Feature3: { id: 'Closing summary', en: 'Closing summary' },
+    program4Feature1: { id: 'Fibonacci setup', en: 'Fibonacci setup' },
+    program4Feature2: { id: 'Trading scenario', en: 'Trading scenarios' },
+    program4Feature3: { id: 'Plan execution', en: 'Plan execution' },
     program4Btn: { id: 'Pelajari Lebih Lanjut', en: 'Learn More' },
+
+    program5Title: { id: 'Richtirement Planning', en: 'Richtirement Planning' },
+    program5Desc: {
+      id: 'Perencanaan investasi dan portfolio untuk membantu Anda menyiapkan masa depan finansial yang lebih terstruktur.',
+      en: 'Investment and portfolio planning to help you prepare a more structured financial future.'
+    },
+    program5Feature1: { id: 'Portfolio planning', en: 'Portfolio planning' },
+    program5Feature2: { id: 'Long-term strategy', en: 'Long-term strategy' },
+    program5Feature3: { id: 'Financial readiness', en: 'Financial readiness' },
+    program5Btn: { id: 'Pelajari Lebih Lanjut', en: 'Learn More' },
+
+    program6Title: { id: 'Structured Warrant', en: 'Structured Warrant' },
+    program6Desc: {
+      id: 'Program khusus untuk memahami peluang, risiko, dan strategi penggunaan structured warrant secara lebih terukur.',
+      en: 'A dedicated program to understand opportunities, risks, and strategies for using structured warrants more systematically.'
+    },
+    program6Feature1: { id: 'Risk awareness', en: 'Risk awareness' },
+    program6Feature2: { id: 'Structured strategy', en: 'Structured strategy' },
+    program6Feature3: { id: 'Practical framework', en: 'Practical framework' },
+    program6Btn: { id: 'Pelajari Lebih Lanjut', en: 'Learn More' },
 
     // Why Us Section
     whyLabel: { id: 'Why You Need GaleriSaham?', en: 'Why You Need GaleriSaham?' },
