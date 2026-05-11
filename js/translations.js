@@ -14,33 +14,33 @@ const translations = {
   home: {
     // Hero Section
     heroBadge: {
-      id: 'Dipercaya 10.000+ Trader Indonesia',
-      en: 'Trusted by 10,000+ Indonesian Traders'
+      id: 'Trusted by 10.000 Indonesian Traders since 2009',
+      en: 'Trusted by 10,000 Indonesian Traders since 2009'
     },
     heroTitle1: {
-      id: 'Kuasai Pasar,',
-      en: 'Master the Market,'
+      id: 'We Build Profitable Traders',
+      en: 'We Build Profitable Traders'
     },
     heroTitle2: {
-      id: 'Bangun Kekayaanmu',
-      en: 'Build Your Wealth'
+      id: '(And Investors)',
+      en: '(And Investors)'
     },
     heroDescription: {
-      id: 'Ubah perjalanan trading Anda dengan bimbingan profesional. Dapatkan analisa independen, strategi teruji, dan komunitas yang mendukung kesuksesan Anda di pasar saham Indonesia.',
-      en: 'Transform your trading journey with professional guidance. Get independent analysis, proven strategies, and a supportive community for your success in the Indonesian stock market.'
+      id: 'Transform your trading & investment journey with professional experience guidance, not a self-proclaimed master. Grow your portfolio with systematic trading management, proven strategies, and a supportive community for your success in financial market.',
+      en: 'Transform your trading & investment journey with professional experience guidance, not a self-proclaimed master. Grow your portfolio with systematic trading management, proven strategies, and a supportive community for your success in the financial market.'
     },
     heroBtn1: { id: 'Mulai Sekarang', en: 'Get Started' },
     heroBtn2: { id: 'Lihat Cara Kerja', en: 'See How It Works' },
-    heroStat1: { id: 'Tahun Pengalaman', en: 'Years Experience' },
-    heroStat2: { id: 'Trader Terbantu', en: 'Traders Helped' },
-    heroStat3: { id: 'Independen', en: 'Independent' },
+    heroStat1: { id: 'Years of Experience', en: 'Years of Experience' },
+    heroStat2: { id: 'Traders Helped', en: 'Traders Helped' },
+    heroStat3: { id: 'Independent', en: 'Independent' },
     chartGrowth: { id: '+24.5% bulan ini', en: '+24.5% this month' },
     floatingCard1Title: { id: 'Signal Diterima', en: 'Signal Received' },
     floatingCard1Desc: { id: 'BBCA +8.5%', en: 'BBCA +8.5%' },
     floatingCard2Title: { id: 'Profit Hari Ini', en: 'Today\'s Profit' },
 
     // Stats Bar
-    statBar1: { id: 'Tahun di Pasar', en: 'Years in Market' },
+    statBar1: { id: 'Years of Experience', en: 'Years of Experience' },
     statBar2: { id: 'Member Aktif', en: 'Active Members' },
     statBar3: { id: 'Saham Dianalisa', en: 'Stocks Analyzed' },
     statBar4: { id: 'Dukungan Tim', en: 'Team Support' },
@@ -48,12 +48,12 @@ const translations = {
     // Features Section
     featuresLabel: { id: 'Layanan Kami', en: 'Our Services' },
     featuresTitle: {
-      id: 'Semua yang Anda Butuhkan untuk Trading Sukses',
-      en: 'Everything You Need for Successful Trading'
+      id: 'Everything You Need for Successful Portfolio',
+      en: 'Everything You Need for a Successful Portfolio'
     },
     featuresSubtitle: {
-      id: 'Dari analisa harian hingga mentoring personal, kami menyediakan tools dan edukasi komprehensif untuk perjalanan trading Anda.',
-      en: 'From daily analysis to personal mentoring, we provide comprehensive tools and education for your trading journey.'
+      id: 'From daily analysis to personal mentoring, we provide comprehensive Financial Plan, Comprehensive Tools, and Learning Community for your trading journey.',
+      en: 'From daily analysis to personal mentoring, we provide comprehensive financial plans, tools, and a learning community for your trading journey.'
     },
     feature1Title: { id: 'Analisa Teknikal', en: 'Technical Analysis' },
     feature1Desc: {
@@ -86,30 +86,35 @@ const translations = {
       en: 'Direct guidance from experienced analysts for strategies tailored to your profile.'
     },
 
-    // How It Works
-    howLabel: { id: 'Cara Kerja', en: 'How It Works' },
+    // The Ugly Truth
+    howLabel: { id: 'The Ugly Truth', en: 'The Ugly Truth' },
     howTitle: {
-      id: 'Mulai Trading dalam 3 Langkah Mudah',
-      en: 'Start Trading in 3 Easy Steps'
+      id: 'Banyak trader yang merugi.',
+      en: 'Many traders lose money.'
     },
     howSubtitle: {
-      id: 'Proses sederhana untuk memulai perjalanan menjadi trader profitable.',
-      en: 'A simple process to start your journey to becoming a profitable trader.'
+      id: 'Beli banyak, malah rugi. Beli dikit, malah untung. Yang dibeli, malah turun. Yang ga jadi beli, malah naik ga karuan. Saham dibeli, turun. Saham dijual, naik. Ujung-ujungnya, saham naik dikit buru-buru dijual, saham turun banyak malah diinvest (nyangkut).',
+      en: 'Buy a lot and lose. Buy a little and win. What you buy goes down; what you skip runs up. In the end, small gains are sold too quickly, while big losses become “investments” you are stuck with.'
     },
-    step1Title: { id: 'Pilih Program', en: 'Choose a Program' },
+    step1Title: { id: 'Merugi dan semakin merugi', en: 'Losing more and more' },
     step1Desc: {
-      id: 'Pilih program yang sesuai dengan kebutuhan dan level trading Anda, dari pemula hingga profesional.',
-      en: 'Choose a program that fits your needs and trading level, from beginner to professional.'
+      id: 'Awalnya beli saham bluechip, lama-lama trading saham gorengan. Bukan karena tidak tahu cara analisa, tapi kebingungan harus pakai cara apa. Semua hanya berpikir buy low sell high, tapi lupa trend sahamnya sedang tidak baik-baik saja.',
+      en: 'It starts with buying blue-chip stocks, then slowly turns into trading speculative stocks. Not because traders cannot analyze, but because they are confused about which method to use. Everyone thinks buy low sell high, but forgets the stock trend may not be healthy.'
     },
-    step2Title: { id: 'Belajar & Praktik', en: 'Learn & Practice' },
+    step2Title: { id: 'Overload information', en: 'Information overload' },
     step2Desc: {
-      id: 'Ikuti materi edukasi dan analisa harian. Praktikkan strategi dengan bimbingan dari tim kami.',
-      en: 'Follow educational materials and daily analysis. Practice strategies with guidance from our team.'
+      id: 'Berita dan informasi muncul di social media, namun tidak ada yang menjelaskan bagaimana menganalisanya. Kebanyakan analisa pun textbook doang: mentranslate teori basic di buku menjadi konten yang seringnya tidak relevan dengan informasi saham beredar.',
+      en: 'News and information appear everywhere on social media, but few explain how to analyze them. Most analysis is textbook-only: basic theory turned into content that is often irrelevant to current stock information.'
     },
-    step3Title: { id: 'Raih Profit', en: 'Achieve Profits' },
+    step3Title: { id: 'Tidak ada pegangan metode', en: 'No method to rely on' },
     step3Desc: {
-      id: 'Terapkan sistem trading yang teruji dan raih profit secara konsisten di pasar saham Indonesia.',
-      en: 'Apply proven trading systems and achieve consistent profits in the Indonesian stock market.'
+      id: 'Yang dipegang malah influencer-nya. Metode adalah segalanya, dan Anda pasti sudah tahu banyak metode. Tapi ketika menghadapi sebuah saham, mau pakai metode apa untuk analisa, ini sering bikin bingung sendiri karena terlalu banyak yang Anda tahu.',
+      en: 'Instead of relying on a method, traders rely on influencers. Method is everything, and you may already know many of them. But when facing a stock, deciding which method to use often becomes confusing because you know too many.'
+    },
+    step4Title: { id: 'Korban exit liquidity', en: 'Becoming exit liquidity' },
+    step4Desc: {
+      id: 'Ketika sebuah komunitas saham diajak beli satu saham tertentu, komunitas ini malah menjadi exit liquidity oleh pihak tertentu yang menunggangi. Komunitas menjadi tidak sehat dan merugikan.',
+      en: 'When a stock community is encouraged to buy a certain stock, the community can become exit liquidity for parties riding the move. The community becomes unhealthy and harmful.'
     },
 
     // Programs Section
@@ -163,29 +168,29 @@ const translations = {
     program4Btn: { id: 'Pelajari Lebih Lanjut', en: 'Learn More' },
 
     // Why Us Section
-    whyLabel: { id: 'Mengapa GaleriSaham', en: 'Why GaleriSaham' },
+    whyLabel: { id: 'Why You Need GaleriSaham?', en: 'Why You Need GaleriSaham?' },
     whyTitle: {
-      id: 'Dipercaya Ribuan Trader Sejak 2009',
-      en: 'Trusted by Thousands of Traders Since 2009'
+      id: 'Kenapa harus di GaleriSaham?',
+      en: 'Why GaleriSaham?'
     },
     whySubtitle: {
-      id: 'Kami bukan hanya platform analisa. Kami adalah partner Anda menuju kesuksesan trading dengan pendekatan yang proven dan tim berpengalaman.',
-      en: 'We\'re not just an analysis platform. We\'re your partner to trading success with a proven approach and an experienced team.'
+      id: 'The traders community platform built by former institutional traders & fund manager, giving you conflict-free analysis, a proven trading system, and commitment to grow together.',
+      en: 'The traders community platform built by former institutional traders & fund manager, giving you conflict-free analysis, a proven trading system, and commitment to grow together.'
     },
-    why1Title: { id: '100% Independen', en: '100% Independent' },
+    why1Title: { id: 'Institutional DNA', en: 'Institutional DNA' },
     why1Desc: {
-      id: 'Tidak terafiliasi dengan sekuritas manapun, analisa bebas kepentingan.',
-      en: 'Not affiliated with any securities firm, unbiased analysis.'
+      id: 'Kami satu-satunya lembaga yang berpengalaman langsung di industri pasar modal. Bukan hanya sebagai trader, tapi menangani transaksi institusi keuangan, berpengalaman sebagai fund manager, hingga investment committee. Yang kami sampaikan berdasarkan best practice, bukan dari buku atau self-proclaimed experts.',
+      en: 'We have direct experience in the capital market industry: handling institutional financial transactions, working as fund managers, and serving in investment committees. What we share comes from industry best practice, not books or self-proclaimed experts.'
     },
-    why2Title: { id: 'Background Institusional', en: 'Institutional Background' },
+    why2Title: { id: '17 Years Experience', en: '17 Years Experience' },
     why2Desc: {
-      id: 'Tim dengan pengalaman sebagai broker dan investment committee.',
-      en: 'Team with experience as brokers and investment committee members.'
+      id: 'Kebanyakan educator atau trading community tidak bertahan lebih dari 2 tahun. Entah karena educator-nya pindah pekerjaan, pindah domisili, atau komunitasnya bermasalah (rungkat). Kami sejak 2009 selalu ada di pasar modal, dengan spesialisasi yang semakin tajam menangani kebutuhan para trader. Ini bukan marketing, ini bukti komitmen.',
+      en: 'Most educators or trading communities do not last more than 2 years, whether because the educator changes jobs, relocates, or the community runs into problems. Since 2009, we have stayed in the capital market and continued sharpening our specialization in trader needs. This is not marketing; it is proof of commitment.'
     },
-    why3Title: { id: 'Track Record Terbukti', en: 'Proven Track Record' },
+    why3Title: { id: 'Independen & sistematis', en: 'Independent & systematic' },
     why3Desc: {
-      id: 'Lebih dari 16 tahun membantu trader mencapai target finansial.',
-      en: 'Over 16 years helping traders achieve their financial targets.'
+      id: 'Sama seperti Anda, kami mencari peluang dan menghindari jebakan. Apa yang Anda pelajari adalah apa yang kami juga pakai. Semuanya sistematis, berdasarkan best practice di industri. Tidak ada afiliasi kepentingan, tidak ada titipan, tidak ada maksud terselubung. Semua transparan.',
+      en: 'Just like you, we look for opportunities and avoid traps. What you learn is what we use ourselves. Everything is systematic and based on industry best practice. No affiliation, no paid agenda, no hidden motive. Everything is transparent.'
     },
     trustCardTitle: { id: 'Member Satisfaction', en: 'Member Satisfaction' },
     trustStat1: { id: 'Rating', en: 'Rating' },
