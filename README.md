@@ -1,155 +1,78 @@
-# GaleriSaham - High Performance Static Website
+# GaleriSaham website
 
-A high-performance static HTML website for GaleriSaham.com - Independent Stock Market Consultant Indonesia.
+Static website for [GaleriSaham](https://galerisaham.com): independent stock-market education and analysis for the Indonesian capital market, since 2009.
 
-## 🚀 Performance Features
+Plain HTML, CSS and a small vanilla JS file. No build step, no dependencies.
 
-### Optimization Highlights
-- **Minimal File Sizes**: Compressed CSS and JS with no external dependencies
-- **Critical CSS**: Inline critical styles for above-the-fold content
-- **Lazy Loading**: Images and content load as needed using Intersection Observer
-- **Mobile-First**: Responsive design optimized for all devices
-- **Fast Load Times**: Target < 1s initial load on 3G connections
+## Pages
 
-### Technical Optimizations
-1. **CSS Optimizations**
-   - Minified and combined into single file (< 10KB)
-   - Uses CSS custom properties for theming
-   - Mobile-first responsive approach
-   - Reduced motion support for accessibility
+Pages live at the same paths the previous WordPress site used, so existing links and search rankings keep working.
 
-2. **JavaScript Optimizations**
-   - Minimal vanilla JS (no frameworks, < 3KB)
-   - Deferred loading with `defer` attribute
-   - Intersection Observer for lazy loading
-   - Event delegation for better performance
+| Path | Page |
+| --- | --- |
+| `/` | Home (landing page) |
+| `/about-us/` | About GaleriSaham: story, founders, milestones |
+| `/pro/` | GS PRO / Profit Trader Club: plans (LITE, MODULE, CLUB, VIP) |
+| `/modul/` | Profit Trader Module (TradingView tools) |
+| `/institute/` | GS Institute: workshops and classes |
+| `/stm/` | Systematic Trading Management |
+| `/kalender/` | Event calendar (empty state until events are announced) |
+| `/kontak/` | Contact: WhatsApp topics, email, office |
+| `/404.html` | Not-found page (GitHub Pages serves it automatically) |
 
-3. **HTML Optimizations**
-   - Semantic HTML5 markup
-   - Proper meta tags for SEO
-   - Open Graph tags for social sharing
-   - Preconnect for external resources
+Redirect stubs keep older URLs alive: `/pages/*.html` (the previous version of this repo) and `/pro/who-are-we/` (old WordPress page) forward to their new paths.
 
-4. **Server Optimizations** (.htaccess)
-   - Gzip compression enabled
-   - Browser caching configured
-   - Security headers set
-   - ETags disabled for better caching
+## Editing content
 
-## 📁 Site Structure
+- **Indonesian is the source language.** The Indonesian copy in the HTML is what search engines index.
+- **English** sits next to each piece of text in a `data-en` attribute, for example
+  `<h2 data-en="Our story">Cerita kami</h2>`. The ID/EN toggle (`js/main.js`) swaps the text and remembers the visitor's choice. `data-en-label` does the same for `aria-label`, and `<title data-en>` for the page title.
+- When you change Indonesian copy, update its `data-en` too. Keep translated elements text-only (no nested tags).
+- The header, footer, disclaimer and WhatsApp CTAs are repeated on every page. Change them in all pages.
+- Contact details used across the site:
+  - WhatsApp: `wa.me/6285890006618` (links carry a prefilled message per topic)
+  - Email: `administrator@galerisaham.com`
+  - Office: Citra Towers Kemayoran, North Tower Lt. 3 Unit H5–I2, Jakarta Pusat 10630
+- **Calendar:** `kalender/index.html` contains a commented template for adding event cards.
+- **"17 tahun"** (17 years) on the home and about pages is written as static text. Update it every November (founded 8 Nov 2009). The copyright year updates itself.
+
+### Content rules
+
+Only publish facts that can be verified. No invented statistics, profit figures, testimonials or prices. Pricing is handled via WhatsApp on purpose. Keep the investment-risk disclaimer in the footer.
+
+## Structure
 
 ```
-galerisaham/
-├── index.html              # Homepage
-├── css/
-│   └── styles.css          # Minified critical CSS
-├── js/
-│   └── main.js             # Optimized JavaScript
-├── pages/
-│   ├── contact.html        # Contact page
-│   ├── stm.html           # STM Program page
-│   ├── pro.html           # GaleriSaham Pro page
-│   ├── workshop.html      # Workshop page
-│   └── analysis.html      # Daily Analysis page
-├── images/                 # Image assets (optimized)
-├── .htaccess              # Server configuration
-├── robots.txt             # SEO crawler rules
-└── sitemap.xml            # Sitemap for search engines
+index.html            Home
+about-us/ pro/ modul/ institute/ stm/ kalender/ kontak/   Sub pages (index.html each)
+pages/ pro/who-are-we/                                    Redirect stubs
+css/styles.css        All styles (design tokens at the top)
+js/main.js            Language toggle, mobile menu, reveal-on-scroll
+assets/               og-image.jpg (social share), icon-512.png
+favicon.svg, favicon-32.png, apple-touch-icon.png
+sitemap.xml, robots.txt, CNAME
 ```
 
-## 🎨 Design Features
+## SEO and accessibility
 
-- **Color Scheme**: GaleriSaham brand blue (#219fda) with accent orange (#ff6d29) and gold (#ffcf56)
-- **Typography**: System font stack for instant rendering
-- **Layout**: CSS Grid and Flexbox for modern layouts
-- **Animations**: Smooth transitions with reduced motion support
+- A unique title, description and canonical URL on every page, plus Open Graph and Twitter cards
+- JSON-LD: `EducationalOrganization` on every page, `FAQPage` and `WebSite` on home, `BreadcrumbList` on sub pages, `Person` for the founder
+- Semantic landmarks, a skip link, a keyboard-accessible menu (`aria-expanded`), language buttons with `aria-pressed`, visible focus styles
+- Brand blue (`#219fda`) and orange are used for decoration only. Text and buttons use darker "ink" shades that meet WCAG AA contrast.
+- Content stays visible without JavaScript. Animations respect `prefers-reduced-motion`.
+- There's a sticky WhatsApp button on mobile
 
-## 📱 Pages
+## Deployment
 
-1. **Homepage (index.html)**
-   - Hero section with CTA
-   - Services overview
-   - About section with stats
-   - Programs showcase
-   - Footer with links
+Served by GitHub Pages. `CNAME` currently points at the staging domain `gs.prayudisatriyo.com`, while canonical URLs, Open Graph tags and the sitemap already use `https://galerisaham.com`. To launch on the main domain:
 
-2. **Contact Page**
-   - Contact information
-   - Office address
-   - Social media links
-   - Operating hours
+1. Point galerisaham.com DNS to GitHub Pages.
+2. Change `CNAME` to `galerisaham.com`.
 
-3. **STM Program**
-   - Systematic Trading Management details
-   - Features and benefits
-   - What's included
+`.htaccess` only applies on Apache hosting. GitHub Pages ignores it.
 
-4. **GaleriSaham Pro**
-   - Premium membership benefits
-   - Feature list
-   - Why go Pro
+No analytics are installed. Add the tracking snippet to the `<head>` of every page if needed.
 
-5. **Workshop**
-   - Training programs
-   - Workshop types
-   - Schedule information
+## License
 
-6. **Daily Analysis**
-   - Market analysis features
-   - Update schedule
-   - Member benefits
-
-## ⚡ Performance Metrics Target
-
-- **First Contentful Paint**: < 1.5s
-- **Largest Contentful Paint**: < 2.5s
-- **Time to Interactive**: < 3.5s
-- **Cumulative Layout Shift**: < 0.1
-- **Total Page Weight**: < 50KB (without images)
-
-## 🔧 Browser Support
-
-- Chrome/Edge (last 2 versions)
-- Firefox (last 2 versions)
-- Safari (last 2 versions)
-- Mobile browsers (iOS Safari, Chrome Mobile)
-
-## 📈 SEO Features
-
-- Semantic HTML structure
-- Proper heading hierarchy
-- Meta descriptions on all pages
-- Open Graph tags
-- XML sitemap
-- robots.txt
-- Fast loading times
-
-## 🛠️ Development
-
-This is a static HTML site with no build process required. Simply:
-
-1. Edit HTML/CSS/JS files directly
-2. Test in browser
-3. Deploy to any web server
-
-## 📝 Content
-
-All content is in Indonesian (Bahasa Indonesia) targeting Indonesian stock market traders and investors.
-
-## 🌐 Deployment
-
-Upload all files to your web server. Ensure `.htaccess` is properly configured if using Apache.
-
-For best performance:
-- Enable CDN if available
-- Optimize and compress images before upload
-- Enable HTTP/2 on server
-- Consider adding service worker for PWA capabilities
-
-## 📄 License
-
-© 2009-2025 GaleriSaham.com - All Rights Reserved
-
----
-
-**Built with performance in mind 🚀**
+© 2009–2026 PT Galeri Saham Indonesia. All rights reserved.
